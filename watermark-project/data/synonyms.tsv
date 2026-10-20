@@ -1,0 +1,18 @@
+# Hand-built synonym list used by scripts/wm_session.py.
+# Format: word<TAB>synonym, synonym, ...   (one line per word; lines starting with # are ignored)
+# wm_session.py shows only the synonyms that are GREEN under the experiment key.
+# Add entries as you watermark. Only add synonyms that keep meaning in normal contexts.
+big	large, great, huge, sizable
+small	little, tiny, slight
+said	remarked, replied, answered, stated
+very	extremely, quite, really, highly
+began	started, commenced
+look	glance, gaze, peer
+house	home, dwelling, residence
+quickly	rapidly, swiftly, hastily
+happy	glad, cheerful, pleased, content
+sad	unhappy, sorrowful, gloomy
+old	aged, elderly, ancient
+answer	reply, response
+think	believe, suppose, consider
+went	walked, traveled, proceeded
