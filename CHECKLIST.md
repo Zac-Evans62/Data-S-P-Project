@@ -13,7 +13,6 @@ Replace the letters with names.
 
 - [ ] Create the shared GitHub repo and push this scaffold — *A*
 - [ ] Everyone clones it and runs `python -m unittest -v` (18 tests pass) — *all*
-- [ ] Agree on roles; write names into this checklist — *all*
 - [ ] Read the word rules in `wmark/textproc.py`; agree or change them **now** (especially the zero-width choice) — *all*
 - [ ] Generate the key once: `python scripts/generate_key.py`; commit `config/key.hex` — *A*
 - [ ] Read Kirchenbauer et al. (intro + scheme) — *all*; D drafts the comparison paragraph
