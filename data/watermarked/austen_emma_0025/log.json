@@ -1,0 +1,57 @@
+{
+  "passage_id": "austen_emma_0025",
+  "set": "calibration",
+  "editor": "Zac",
+  "target": "0.70",
+  "max_minutes": 15,
+  "settings_frozen": false,
+  "started_at": "2026-10-27T22:24:14.624747+00:00",
+  "versions": [
+    {
+      "version": "v000",
+      "at": "2026-10-27T22:24:14.624777+00:00",
+      "green": 70,
+      "total": 144,
+      "score": 0.4861111111111111
+    },
+    {
+      "version": "v001",
+      "at": "2026-10-27T22:29:30.060915+00:00",
+      "green": 82,
+      "total": 148,
+      "score": 0.5540540540540541
+    },
+    {
+      "version": "v002",
+      "at": "2026-10-27T22:34:00.966663+00:00",
+      "green": 90,
+      "total": 151,
+      "score": 0.5960264900662252
+    },
+    {
+      "version": "v003",
+      "at": "2026-10-27T22:36:00.644103+00:00",
+      "green": 94,
+      "total": 153,
+      "score": 0.6143790849673203
+    },
+    {
+      "version": "v004",
+      "at": "2026-10-27T22:38:41.392764+00:00",
+      "green": 99,
+      "total": 158,
+      "score": 0.6265822784810127
+    },
+    {
+      "version": "v005",
+      "at": "2026-10-27T22:40:35.342637+00:00",
+      "green": 102,
+      "total": 159,
+      "score": 0.6415094339622641
+    }
+  ],
+  "finished_at": "2026-10-27T22:43:27.363293+00:00",
+  "stop_reason": "time limit reached",
+  "final_version": "v005",
+  "minutes_used": 19.2
+}

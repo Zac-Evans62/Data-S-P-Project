@@ -1,0 +1,36 @@
+{
+  "passage_id": "jerome_three_men_0021",
+  "set": "calibration",
+  "editor": "Zac",
+  "target": "0.70",
+  "max_minutes": 15,
+  "settings_frozen": false,
+  "started_at": "2026-10-29T20:00:37.288439+00:00",
+  "versions": [
+    {
+      "version": "v000",
+      "at": "2026-10-29T20:00:37.288453+00:00",
+      "green": 93,
+      "total": 144,
+      "score": 0.6458333333333334
+    },
+    {
+      "version": "v001",
+      "at": "2026-10-29T20:08:07.405084+00:00",
+      "green": 109,
+      "total": 156,
+      "score": 0.6987179487179487
+    },
+    {
+      "version": "v002",
+      "at": "2026-10-29T20:09:42.484237+00:00",
+      "green": 112,
+      "total": 156,
+      "score": 0.717948717948718
+    }
+  ],
+  "finished_at": "2026-10-29T20:09:57.218323+00:00",
+  "stop_reason": "target reached",
+  "final_version": "v002",
+  "minutes_used": 9.3
+}

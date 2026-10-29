@@ -126,8 +126,9 @@ def main():
     meta_path = SOURCES_DIR / "sources.csv"
     if not meta_path.exists():
         raise SystemExit(f"Missing {meta_path}. See data/sources/README.md.")
-    with open(meta_path, newline="", encoding="utf-8") as f:
-        meta = {r["book_id"]: r for r in csv.DictReader(f)}
+    # utf-8-sig: tolerate the invisible BOM Excel adds; skip blank rows like ",,,,,"
+    with open(meta_path, newline="", encoding="utf-8-sig") as f:
+        meta = {r["book_id"].strip(): r for r in csv.DictReader(f) if (r.get("book_id") or "").strip()}
 
     books = sorted(SOURCES_DIR.glob("*.txt"))
     if not books:

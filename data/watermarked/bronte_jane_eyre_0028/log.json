@@ -1,0 +1,50 @@
+{
+  "passage_id": "bronte_jane_eyre_0028",
+  "set": "calibration",
+  "editor": "Zac",
+  "target": "0.70",
+  "max_minutes": 15,
+  "settings_frozen": false,
+  "started_at": "2026-10-29T19:43:22.501507+00:00",
+  "versions": [
+    {
+      "version": "v000",
+      "at": "2026-10-29T19:43:22.501521+00:00",
+      "green": 73,
+      "total": 134,
+      "score": 0.5447761194029851
+    },
+    {
+      "version": "v001",
+      "at": "2026-10-29T19:48:48.343148+00:00",
+      "green": 87,
+      "total": 150,
+      "score": 0.58
+    },
+    {
+      "version": "v002",
+      "at": "2026-10-29T19:51:28.695724+00:00",
+      "green": 97,
+      "total": 164,
+      "score": 0.5914634146341463
+    },
+    {
+      "version": "v003",
+      "at": "2026-10-29T19:53:43.542178+00:00",
+      "green": 102,
+      "total": 171,
+      "score": 0.5964912280701754
+    },
+    {
+      "version": "v004",
+      "at": "2026-10-29T19:58:02.503668+00:00",
+      "green": 118,
+      "total": 183,
+      "score": 0.644808743169399
+    }
+  ],
+  "finished_at": "2026-10-29T19:59:12.232719+00:00",
+  "stop_reason": "time limit reached",
+  "final_version": "v004",
+  "minutes_used": 15.8
+}

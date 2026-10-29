@@ -1,0 +1,64 @@
+{
+  "passage_id": "washington_up_from_slavery_0038",
+  "set": "calibration",
+  "editor": "Zac",
+  "target": "0.70",
+  "max_minutes": 15,
+  "settings_frozen": false,
+  "started_at": "2026-10-29T20:19:06.498160+00:00",
+  "versions": [
+    {
+      "version": "v000",
+      "at": "2026-10-29T20:19:06.498173+00:00",
+      "green": 73,
+      "total": 151,
+      "score": 0.48344370860927155
+    },
+    {
+      "version": "v001",
+      "at": "2026-10-29T20:25:47.216697+00:00",
+      "green": 90,
+      "total": 165,
+      "score": 0.5454545454545454
+    },
+    {
+      "version": "v002",
+      "at": "2026-10-29T20:27:51.217566+00:00",
+      "green": 90,
+      "total": 171,
+      "score": 0.5263157894736842
+    },
+    {
+      "version": "v003",
+      "at": "2026-10-29T20:28:42.138696+00:00",
+      "green": 90,
+      "total": 160,
+      "score": 0.5625
+    },
+    {
+      "version": "v004",
+      "at": "2026-10-29T20:29:55.685624+00:00",
+      "green": 90,
+      "total": 160,
+      "score": 0.5625
+    },
+    {
+      "version": "v005",
+      "at": "2026-10-29T20:31:02.230845+00:00",
+      "green": 90,
+      "total": 160,
+      "score": 0.5625
+    },
+    {
+      "version": "v006",
+      "at": "2026-10-29T20:33:27.478544+00:00",
+      "green": 98,
+      "total": 160,
+      "score": 0.6125
+    }
+  ],
+  "finished_at": "2026-10-29T20:37:07.686279+00:00",
+  "stop_reason": "time limit reached",
+  "final_version": "v006",
+  "minutes_used": 18.0
+}
