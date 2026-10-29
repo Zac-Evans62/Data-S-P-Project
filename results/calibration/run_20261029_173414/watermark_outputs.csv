@@ -1,0 +1,6 @@
+id,book_id,forgery_selected,original_total_words,original_green_fraction,status,target,final_total_words,final_green_fraction,reached_target,changed_words,minutes_used,stop_reason,versions_saved,editor,quality,quality_problems
+austen_emma_0025,austen_emma,,144,0.486111,finished,0.70,159,0.641509,False,65,19.2,time limit reached,6,Zac,usable,
+bronte_jane_eyre_0028,bronte_jane_eyre,,134,0.544776,finished,0.70,183,0.644809,False,76,15.8,time limit reached,5,Zac,usable,
+jerome_three_men_0021,jerome_three_men,,144,0.645833,finished,0.70,156,0.717949,True,33,9.3,target reached,3,Zac,usable,
+shelley_frankenstein_0039,shelley_frankenstein,,193,0.658031,finished,0.70,202,0.70297,True,28,8.0,target reached,4,Zac,usable,
+washington_up_from_slavery_0038,washington_up_from_slavery,,151,0.483444,finished,0.70,160,0.6125,False,85,18.0,time limit reached,7,Zac,usable,
