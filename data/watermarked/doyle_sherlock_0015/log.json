@@ -1,0 +1,57 @@
+{
+  "passage_id": "doyle_sherlock_0015",
+  "set": "evaluation",
+  "editor": "Zac",
+  "target": "0.66",
+  "max_minutes": 15,
+  "settings_frozen": true,
+  "started_at": "2026-10-31T18:41:09.881996+00:00",
+  "versions": [
+    {
+      "version": "v000",
+      "at": "2026-10-31T18:41:09.882036+00:00",
+      "green": 89,
+      "total": 181,
+      "score": 0.49171270718232046
+    },
+    {
+      "version": "v001",
+      "at": "2026-10-31T18:45:08.901294+00:00",
+      "green": 98,
+      "total": 180,
+      "score": 0.5444444444444444
+    },
+    {
+      "version": "v002",
+      "at": "2026-10-31T18:47:53.066858+00:00",
+      "green": 103,
+      "total": 178,
+      "score": 0.5786516853932584
+    },
+    {
+      "version": "v003",
+      "at": "2026-10-31T18:49:51.156033+00:00",
+      "green": 107,
+      "total": 180,
+      "score": 0.5944444444444444
+    },
+    {
+      "version": "v004",
+      "at": "2026-10-31T18:53:50.015698+00:00",
+      "green": 113,
+      "total": 184,
+      "score": 0.6141304347826086
+    },
+    {
+      "version": "v005",
+      "at": "2026-10-31T18:55:20.435402+00:00",
+      "green": 113,
+      "total": 182,
+      "score": 0.6208791208791209
+    }
+  ],
+  "finished_at": "2026-10-31T19:06:43.331065+00:00",
+  "stop_reason": "time limit reached",
+  "final_version": "v005",
+  "minutes_used": 25.6
+}

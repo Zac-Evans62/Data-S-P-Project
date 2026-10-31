@@ -1,0 +1,50 @@
+{
+  "passage_id": "wells_time_machine_0022",
+  "set": "evaluation",
+  "editor": "Zac",
+  "target": "0.66",
+  "max_minutes": 15,
+  "settings_frozen": true,
+  "started_at": "2026-10-31T19:43:21.701340+00:00",
+  "versions": [
+    {
+      "version": "v000",
+      "at": "2026-10-31T19:43:21.701369+00:00",
+      "green": 74,
+      "total": 125,
+      "score": 0.592
+    },
+    {
+      "version": "v001",
+      "at": "2026-10-31T19:47:59.125008+00:00",
+      "green": 77,
+      "total": 126,
+      "score": 0.6111111111111112
+    },
+    {
+      "version": "v002",
+      "at": "2026-10-31T19:52:05.746944+00:00",
+      "green": 83,
+      "total": 130,
+      "score": 0.6384615384615384
+    },
+    {
+      "version": "v003",
+      "at": "2026-10-31T19:52:47.477603+00:00",
+      "green": 83,
+      "total": 130,
+      "score": 0.6384615384615384
+    },
+    {
+      "version": "v004",
+      "at": "2026-10-31T19:54:10.035647+00:00",
+      "green": 87,
+      "total": 130,
+      "score": 0.6692307692307692
+    }
+  ],
+  "finished_at": "2026-10-31T19:54:29.241163+00:00",
+  "stop_reason": "target reached",
+  "final_version": "v004",
+  "minutes_used": 11.1
+}

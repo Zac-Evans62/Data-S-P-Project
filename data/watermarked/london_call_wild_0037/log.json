@@ -1,0 +1,50 @@
+{
+  "passage_id": "london_call_wild_0037",
+  "set": "evaluation",
+  "editor": "Zac",
+  "target": "0.66",
+  "max_minutes": 15,
+  "settings_frozen": true,
+  "started_at": "2026-10-31T19:10:03.534867+00:00",
+  "versions": [
+    {
+      "version": "v000",
+      "at": "2026-10-31T19:10:03.534906+00:00",
+      "green": 60,
+      "total": 108,
+      "score": 0.5555555555555556
+    },
+    {
+      "version": "v001",
+      "at": "2026-10-31T19:13:04.869439+00:00",
+      "green": 61,
+      "total": 106,
+      "score": 0.5754716981132075
+    },
+    {
+      "version": "v002",
+      "at": "2026-10-31T19:15:12.414202+00:00",
+      "green": 67,
+      "total": 107,
+      "score": 0.6261682242990654
+    },
+    {
+      "version": "v003",
+      "at": "2026-10-31T19:17:22.682131+00:00",
+      "green": 67,
+      "total": 106,
+      "score": 0.6320754716981132
+    },
+    {
+      "version": "v004",
+      "at": "2026-10-31T19:22:26.102404+00:00",
+      "green": 78,
+      "total": 114,
+      "score": 0.6842105263157895
+    }
+  ],
+  "finished_at": "2026-10-31T19:22:42.143215+00:00",
+  "stop_reason": "target reached",
+  "final_version": "v004",
+  "minutes_used": 12.6
+}
