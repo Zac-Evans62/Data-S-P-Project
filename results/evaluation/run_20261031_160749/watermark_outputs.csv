@@ -1,0 +1,11 @@
+id,book_id,forgery_selected,original_total_words,original_green_fraction,status,target,final_total_words,final_green_fraction,reached_target,changed_words,minutes_used,stop_reason,versions_saved,editor,quality,quality_problems,original_flagged,final_flagged
+douglass_narrative_0009,douglass_narrative,,180,0.572222,finished,0.66,178,0.662921,True,18,14.2,target reached,7,Billy,usable,,False,True
+douglass_narrative_0026,douglass_narrative,yes,128,0.5,finished,0.66,138,0.630435,False,62,24.8,time limit reached,6,Zac,usable,,False,True
+doyle_sherlock_0009,doyle_sherlock,,184,0.543478,finished,0.66,182,0.664835,True,24,14.1,target reached,7,Billy,usable,,False,True
+doyle_sherlock_0015,doyle_sherlock,,181,0.491713,finished,0.66,182,0.620879,False,67,25.6,time limit reached,6,Zac,usable,,False,False
+dubois_souls_black_folk_0021,dubois_souls_black_folk,yes,165,0.587879,finished,0.66,165,0.636364,False,9,15.6,time limit reached,4,Billy,usable,,False,True
+london_call_wild_0032,london_call_wild,yes,172,0.593023,finished,0.66,171,0.637427,False,10,15.4,time limit reached,3,Billy,usable,,False,True
+london_call_wild_0037,london_call_wild,,108,0.555556,finished,0.66,114,0.684211,True,51,12.6,target reached,5,Zac,usable,,False,True
+stevenson_treasure_0028,stevenson_treasure,yes,187,0.566845,finished,0.66,186,0.639785,False,16,15.5,time limit reached,8,Billy,usable,,False,True
+thoreau_walden_0027,thoreau_walden,,156,0.685897,finished,0.66,156,0.685897,True,0,0.6,target reached,1,Zac,usable,,True,True
+wells_time_machine_0022,wells_time_machine,yes,125,0.592,finished,0.66,130,0.669231,True,33,11.1,target reached,5,Zac,usable,,False,True
