@@ -1,0 +1,43 @@
+{
+  "passage_id": "dubois_souls_black_folk_0021",
+  "set": "evaluation",
+  "editor": "Billy",
+  "target": "0.66",
+  "max_minutes": 15,
+  "settings_frozen": true,
+  "started_at": "2026-10-29T23:28:33.657464+00:00",
+  "versions": [
+    {
+      "version": "v000",
+      "at": "2026-10-29T23:28:33.657464+00:00",
+      "green": 97,
+      "total": 165,
+      "score": 0.5878787878787879
+    },
+    {
+      "version": "v001",
+      "at": "2026-10-29T23:32:14.412894+00:00",
+      "green": 97,
+      "total": 165,
+      "score": 0.5878787878787879
+    },
+    {
+      "version": "v002",
+      "at": "2026-10-29T23:36:47.195230+00:00",
+      "green": 100,
+      "total": 165,
+      "score": 0.6060606060606061
+    },
+    {
+      "version": "v003",
+      "at": "2026-10-29T23:41:03.881472+00:00",
+      "green": 105,
+      "total": 165,
+      "score": 0.6363636363636364
+    }
+  ],
+  "finished_at": "2026-10-29T23:44:09.636274+00:00",
+  "stop_reason": "time limit reached",
+  "final_version": "v003",
+  "minutes_used": 15.6
+}
