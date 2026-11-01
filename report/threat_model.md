@@ -1,7 +1,5 @@
 # Threat model (spec 4.3)
 
-Draft filled in for review. Every claim is a **[Prediction]** until Milestone 2 measures it; the three cells Milestone 2 tests are marked ★.
-
 **Assumptions behind the numbers (update after calibration):** threshold T = 0.60, watermark target 0.70, passage length N ≈ 150 normalized words. An unmarked passage is modeled as N independent fair coin flips (green with p = 0.5). Real prose repeats common words, so real scores vary more than this model says. The measured false-positive rate on the evaluation set overrides the model.
 
 ## Goals
