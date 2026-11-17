@@ -2,6 +2,7 @@
 
 A word based keyed watermark for English composition, with a detector, a calibration/evaluation experiment and a threat model.
 
+<<<<<<< Updated upstream
 **Functionality** A secret key colors every normalized word green or red. Watermarking replaces red words with green synonyms. The detector computes the fraction of green word occurrences and flags text when that fraction is strictly above a threshold.
 
 ## Results at a glance
@@ -20,15 +21,23 @@ Official evaluation run: `results/evaluation/run_20261031_160749/` (full tables 
 - Exact one-sided 95% upper bound on the false-positive rate: 11.8%. The 150 passages come from only 7 books, so the real uncertainty is larger.
 
 The threat model is in `report/threat_model.md`. The report outline is in `report/milestone1_outline.md`.
+=======
+**Milestone 1:** detector, calibration/evaluation, threat model.
+>>>>>>> Stashed changes
 
 ## Setup
 
 Requires Python 3.10+ and nothing else (standard library only).
 
 ```bash
+<<<<<<< Updated upstream
 git clone <repo-url>
 cd <repo>
 python -m unittest -v          # 18 tests should pass
+=======
+git clone <repo-url> && cd <repo>
+python -m unittest -v      
+>>>>>>> Stashed changes
 ```
 
 Score any text file, and see each word's color:
@@ -166,11 +175,11 @@ One random 32-byte key, generated once with `scripts/generate_key.py` and never 
 - Detection is statistical. Measured false-positive rate is 7.3% on book passages, much higher than a coin-flip model predicts (about 0.07% at 150 words), because common words push unmarked text above 0.50 under this key.
 - Word-level watermarks do not survive paraphrase, and the word rules leave look-alike letters and some invisible characters untouched (see the threat model).
 
-## Contribution statement
 
+<<<<<<< Updated upstream
 <!-- Draft from the commit history; confirm each line with its owner and add real commit links: https://github.com/<org>/<repo>/commit/<sha> -->
 
 | Member | Contributions | Key commits |
 |---|---|---|
 | Billy Vincini | Compiled the 15-book source list (`sources.csv`); blind reviews of the calibration outputs; edited 5 of the 10 evaluation passages; wrote the threat model (`report/threat_model.md`) and report Section 6 |  [`cff45df`](https://github.com/Zac-Evans62/Data-S-P-Project/commit/cff45df), [`e8fff16`](https://github.com/Zac-Evans62/Data-S-P-Project/commit/e8fff16), [`d136d4e`](https://github.com/Zac-Evans62/Data-S-P-Project/commit/d136d4e), [`2d3032c`](https://github.com/Zac-Evans62/Data-S-P-Project/commit/2d3032c) |
-| Zachary Evans | Repository scaffold and detector; passage collection, junk removal and split; calibration practice watermarking and threshold choice; froze settings; edited 5 of the 10 evaluation passages; blind reviews of evaluation outputs; ran the evaluation | [`34ab017`](https://github.com/Zac-Evans62/Data-S-P-Project/commit/34ab017), [`110e6db`](https://github.com/Zac-Evans62/Data-S-P-Project/commit/110e6db), [`0ba15ab`](https://github.com/Zac-Evans62/Data-S-P-Project/commit/0ba15ab), [`673e138`](https://github.com/Zac-Evans62/Data-S-P-Project/commit/673e138), [`8612100`](https://github.com/Zac-Evans62/Data-S-P-Project/commit/8612100), [`0400b0f`](https://github.com/Zac-Evans62/Data-S-P-Project/commit/0400b0f), [`cc09f02`](https://github.com/Zac-Evans62/Data-S-P-Project/commit/cc09f02) |
+=======
