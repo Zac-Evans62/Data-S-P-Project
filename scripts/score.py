@@ -1,13 +1,4 @@
-"""Score any text file (or stdin) with the detector.
-
-    python scripts/score.py some_passage.txt
-    echo "The cat sat on the mat" | python scripts/score.py -
-    python scripts/score.py file.txt --threshold 0.60 --colors
-
-Uses the threshold from config/settings.json unless --threshold is given.
---colors prints each distinct word with its color (debugging only; do not
-show this to the quality-check reviewer).
-"""
+"""Score any text file (or stdin) with the detector."""
 import _bootstrap  # noqa: F401
 
 import argparse

@@ -1,10 +1,4 @@
-"""Word colors, scoring and the flag decision (project spec, Section 2).
-
-Scores are kept as exact fractions so the threshold comparison is exact:
-65/100 against threshold "0.65" is EQUAL, therefore NOT flagged. With
-floats, 0.65 can round either way. Always pass thresholds as strings
-("0.60") or Fractions, never as float literals you computed.
-"""
+"""Word colors, scoring and the flag decision """
 
 from __future__ import annotations
 

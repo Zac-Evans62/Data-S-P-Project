@@ -1,7 +1,7 @@
-# Hand-built synonym list used by scripts/wm_session.py.
-# Format: word<TAB>synonym, synonym, ...   (one line per word; lines starting with # are ignored)
+# synonym list
+# Format: word<TAB>synonym, synonym, ...
 # wm_session.py shows only the synonyms that are GREEN under the experiment key.
-# Add entries as you watermark. Only add synonyms that keep meaning in normal contexts.
+#add as you go
 big	large, great, huge, sizable
 small	little, tiny, slight
 said	remarked, replied, answered, stated

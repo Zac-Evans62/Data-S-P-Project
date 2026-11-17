@@ -1,10 +1,4 @@
-"""Generate the experiment's single 32-byte key. Run ONCE, then commit it.
-
-    python scripts/generate_key.py
-
-Refuses to overwrite an existing key. This is a demonstration key for a
-class project; it is committed so graders can reproduce results.
-"""
+"""Generate the experiment's single 32-byte key. Run ONCE, then commit it."""
 import _bootstrap  # noqa: F401
 
 from wmark.config import generate_key, key_fingerprint, key_path, load_settings

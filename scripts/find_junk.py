@@ -1,16 +1,3 @@
-"""Find (and optionally remove) candidate passages that are probably not prose.
-
-    python scripts/find_junk.py                      # list suspects with reasons
-    python scripts/find_junk.py --remove ID1 ID2 ... # delete those passages + manifest rows
-
-Run AFTER your final collect_passages.py and BEFORE split_data.py.
-(Re-running collect_passages.py recreates everything, so removals would be lost.)
-
-A suspect is not automatically junk: open each one and decide. Remove only
-passages that are not ordinary prose (tables of contents, chapter lists,
-footnotes, letter headers, indexes, transcriber's notes, poetry, lists).
-Note in the report how many were removed and why.
-"""
 import _bootstrap  # noqa: F401
 
 import argparse

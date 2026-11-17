@@ -1,20 +1,4 @@
-"""Split candidates into calibration/evaluation sets (spec 4.1). Run BEFORE any scoring.
-
-    python scripts/split_data.py
-
-What it does (also written to results/split_report.md):
-  * Assigns whole BOOKS to one set, so all passages of a book share a set.
-  * Picks 150 unmarked passages per set, at least 30 from each length
-    group (aims for 50/50/50), spreading picks round-robin across books.
-  * Picks watermark passages from the medium group (100-199 words):
-    5 for calibration, 10 for evaluation, from different books where possible.
-  * Randomly selects 5 of the 10 evaluation watermark passages for the
-    Milestone 2 query-access forgery attack, using the seed in settings.json.
-    No scores are computed here, so the selection cannot depend on scores.
-
-Everything is driven by the seed in config/settings.json, so it is
-reproducible. Refuses to re-split an already split manifest without --force.
-"""
+"""Split candidates into calibration/evaluation sets Run BEFORE any scoring."""
 import _bootstrap  # noqa: F401
 
 import argparse

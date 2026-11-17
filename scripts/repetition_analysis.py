@@ -1,16 +1,4 @@
-"""Repetition analysis for the report (spec 4.2, "Length and repetition").
-
-    python scripts/repetition_analysis.py --set evaluation
-    python scripts/repetition_analysis.py --file some_text.txt
-
-Shows:
-  1. A synthetic demo: one word repeated 1,000 times scores exactly 0 or 1.
-  2. The most repetitive unmarked passage in the set (lowest distinct/total
-     ratio), with the words that contribute most to its score.
-  3. Correlation between repetitiveness and score across the set.
-
-Using --set evaluation requires frozen settings.
-"""
+"""Repetition analysis for the report"""
 import _bootstrap  # noqa: F401
 
 import argparse

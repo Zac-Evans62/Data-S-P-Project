@@ -1,18 +1,4 @@
-"""Make blind quality-check packets for finished watermarking outputs.
-
-    python scripts/make_review_packets.py --set calibration
-    python scripts/make_review_packets.py --set evaluation
-
-For every watermark passage in the set with a final.txt, writes
-quality_checks/packets/<set>/<id>.md containing the EDITED text, the
-ORIGINAL text and a word diff, but NO scores, NO detector decision and NO
-indication of whether the target was reached.
-
-It also adds a blank row per passage to quality_checks/reviews.csv with the
-editor filled in. The reviewer (anyone but the editor) reads the packet and
-fills in reviewer, meaning_preserved (yes/no), readable (yes/no), notes and
-reviewed_at. Commit reviews.csv BEFORE looking at the scores.
-"""
+"""Make blind quality-check packets for finished watermarking outputs."""
 import _bootstrap  # noqa: F401
 
 import argparse

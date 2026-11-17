@@ -6,23 +6,6 @@ Workflow for an editor:
     # edit data/watermarked/<passage_id>/working.txt in any text editor
     python scripts/wm_session.py check  <passage_id>     # repeat as you edit
     python scripts/wm_session.py finish <passage_id>
-
-`start` copies the original into working.txt and starts the clock.
-`check` saves a new version if working.txt changed, prints the score,
-        time used, the red words (most frequent first) and any GREEN
-        synonyms for them from data/synonyms.tsv.
-`finish` applies the stopping rule, keeps the BEST-scoring version as
-        final.txt (spec: keep the best output even if it misses the target)
-        and records why you stopped.
-
-Stopping rule: stop when the green fraction reaches the target, or when
-`stopping_rule_max_minutes` have passed, whichever comes first.
-
-Calibration passages: you may pass --target while experimenting (settings
-not frozen yet). Evaluation passages: settings must be frozen; the frozen
-target and time limit are used and cannot be overridden.
-
-Never show the reviewer the output of this script.
 """
 import _bootstrap  # noqa: F401
 

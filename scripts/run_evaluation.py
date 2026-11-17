@@ -1,23 +1,4 @@
-"""Evaluation run (spec 4.2 step 5). Requires frozen settings.
-
-    python scripts/run_evaluation.py
-    python scripts/run_evaluation.py --annual-volume 10000
-
-Scores the 150 unmarked evaluation passages and the 10 evaluation
-watermarking outputs with the FROZEN threshold, and reports:
-
-  * unmarked false-positive rate              flagged / 150
-  * detection rate on watermarking outputs    flagged / 10
-  * usable watermarking success rate          (flagged AND quality yes/yes) / 10
-  * flagged/tested per length group
-  * small-sample upper bounds (3/n rule and exact 95% bound)
-  * annual false-flag estimate for --annual-volume submissions
-
-Unfinished or unreviewed outputs count as failures in the rates (the
-denominator is always all 10 attempts) and are listed so you can fix them.
-Each run goes in its own results/evaluation/run_<timestamp>/ folder; the
-first complete run is your official result.
-"""
+"""Evaluation run Requires frozen settings."""
 import _bootstrap  # noqa: F401
 
 import argparse

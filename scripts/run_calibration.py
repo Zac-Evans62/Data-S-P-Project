@@ -1,19 +1,4 @@
-"""Calibration run (spec 4.2 steps 1-3). Uses CALIBRATION passages only.
-
-    python scripts/run_calibration.py
-    python scripts/run_calibration.py --thresholds 0.55 0.58 0.60 0.62 0.65
-
-Scores the 150 unmarked calibration passages and the 5 calibration
-watermarking outputs (whatever is finished), then, for each candidate
-threshold, counts:
-  * unmarked passages that would be FLAGGED   (false positives)
-  * watermarking outputs that would be UNFLAGGED (misses)
-
-Writes results/calibration/run_<timestamp>/ with CSVs and summary.md.
-Use the table to choose the threshold and the watermark target (strictly
-above the threshold), put them in config/settings.json, then run
-scripts/freeze_settings.py.
-"""
+"""Calibration run Uses CALIBRATION passages only. """
 import _bootstrap  # noqa: F401
 
 import argparse

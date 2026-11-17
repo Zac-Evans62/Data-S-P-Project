@@ -1,21 +1,4 @@
-"""Fix the settings before evaluation (spec 4.2 step 4).
-
-    python scripts/freeze_settings.py
-
-Checks that threshold and watermark_target are set in config/settings.json,
-that the target is strictly above the threshold, and that the key exists.
-Then marks the settings frozen and records the key fingerprint and time.
-
-Afterwards, commit and tag so the grader can see nothing was tuned on the
-evaluation passages:
-
-    git add config/settings.json && git commit -m "Freeze settings for evaluation"
-    git tag settings-frozen && git push --tags
-
-There is deliberately no "unfreeze". If you must change something after
-evaluation, edit settings.json by hand, keep the original results, and
-report the new runs separately (spec 4.2, last paragraph).
-"""
+"""Fix the settings before evaluation """
 import _bootstrap  # noqa: F401
 
 from datetime import datetime
