@@ -138,7 +138,7 @@ def main():
                 "book_id": book_id,
                 "source_title": meta[book_id].get("title", ""),
                 "source_url": meta[book_id].get("url", ""),
-                "file": str(out.relative_to(REPO_ROOT)),
+                "file": out.relative_to(REPO_ROOT).as_posix(),
                 "word_count": len(toks),
                 "distinct_words": len(set(toks)),
                 "length_group": group,
@@ -158,3 +158,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
