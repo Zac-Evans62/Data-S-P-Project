@@ -1,3 +1,21 @@
+"""The passage manifest: data/manifest.csv, one row per candidate passage.
+
+Columns
+-------
+id                passage id, e.g. "austen_pride_0012"
+book_id           source document id (file stem in data/sources/)
+source_title      from data/sources/sources.csv
+source_url        from data/sources/sources.csv
+file              passage text file, relative to repo root
+word_count        total normalized words
+distinct_words    distinct normalized words
+length_group      short (30-99) | medium (100-199) | long (200-400)
+collection        unmarked | watermark | unused   (set by split_data.py)
+set               calibration | evaluation | ""    (set by split_data.py)
+forgery_selected  "yes" for the 5 query-forgery passages, else ""
+notes             free text
+"""
+
 from __future__ import annotations
 
 import csv
