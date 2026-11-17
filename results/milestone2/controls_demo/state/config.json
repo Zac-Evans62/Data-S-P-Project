@@ -1,0 +1,12 @@
+{
+  "mode": "score",
+  "score_digits": 3,
+  "rate_limit": {
+    "enabled": true,
+    "requests": 20,
+    "window_seconds": 60
+  },
+  "clock": "simulated",
+  "request_cost_seconds": 1.0,
+  "max_chars": 20000
+}

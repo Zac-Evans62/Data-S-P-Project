@@ -47,8 +47,12 @@ def length_group(n_words: int) -> str | None:
 def read_manifest(path: Path = MANIFEST_PATH) -> list[dict]:
     if not path.exists():
         raise SystemExit(f"No manifest at {path}. Run scripts/collect_passages.py first.")
-    with open(path, newline="", encoding="utf-8") as f:
-        return list(csv.DictReader(f))
+    with open(path, newline="", encoding="utf-8-sig") as f:
+        rows = list(csv.DictReader(f))
+    # Paths written on Windows use backslashes; forward slashes work on every OS.
+    for r in rows:
+        r["file"] = r.get("file", "").replace("\\", "/")
+    return rows
 
 
 def write_manifest(rows: list[dict], path: Path = MANIFEST_PATH) -> None:

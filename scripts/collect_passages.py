@@ -1,3 +1,31 @@
+"""Cut public-domain books into candidate passages and write the manifest.
+
+Input
+-----
+data/sources/<book_id>.txt     plain-text books (e.g. Project Gutenberg "Plain Text UTF-8")
+data/sources/sources.csv       one row per book: book_id,title,author,url,license
+
+Output
+------
+data/passages/<id>.txt         one file per candidate passage
+data/manifest.csv              one row per candidate (collection/set left blank)
+
+    python scripts/collect_passages.py
+    python scripts/collect_passages.py --max-per-book 30
+
+Collect MORE candidates than you need (aim for 500+ from 15+ books).
+split_data.py then picks exactly 300 unmarked + 15 watermark passages.
+Using many books matters: passages from one book are correlated, and all of
+a book's passages must go to the same set.
+
+How passages are cut: Gutenberg header/footer is stripped, the text is
+split into paragraphs at blank lines, and consecutive paragraphs are joined
+until the word count reaches a random target inside the current length
+group. Groups rotate short -> medium -> long so every book yields a mix.
+Paragraphs that look like headings (few words, mostly capitals, "CHAPTER")
+are skipped. Read a sample of the output: poetry, tables of contents and
+footnotes can slip through; delete bad passage rows by hand if needed.
+"""
 import _bootstrap  # noqa: F401
 
 import argparse
@@ -138,7 +166,7 @@ def main():
                 "book_id": book_id,
                 "source_title": meta[book_id].get("title", ""),
                 "source_url": meta[book_id].get("url", ""),
-                "file": str(out.relative_to(REPO_ROOT)),
+                "file": out.relative_to(REPO_ROOT).as_posix(),
                 "word_count": len(toks),
                 "distinct_words": len(set(toks)),
                 "length_group": group,
