@@ -182,4 +182,3 @@ One random 32-byte key, generated once with `scripts/generate_key.py` and never 
 | Member | Contributions | Key commits |
 |---|---|---|
 | Billy Vincini | Compiled the 15-book source list (`sources.csv`); blind reviews of the calibration outputs; edited 5 of the 10 evaluation passages; wrote the threat model (`report/threat_model.md`) and report Section 6 |  [`cff45df`](https://github.com/Zac-Evans62/Data-S-P-Project/commit/cff45df), [`e8fff16`](https://github.com/Zac-Evans62/Data-S-P-Project/commit/e8fff16), [`d136d4e`](https://github.com/Zac-Evans62/Data-S-P-Project/commit/d136d4e), [`2d3032c`](https://github.com/Zac-Evans62/Data-S-P-Project/commit/2d3032c) |
->>>>>>> Stashed changes
