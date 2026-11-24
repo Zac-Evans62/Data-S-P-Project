@@ -41,6 +41,23 @@ for the three character-change tests. Commit it and tag the commit
 | 2. Forgery with the key | 9 unmarked originals | thoreau_walden_0027 (original already flagged; record as a false positive) |
 | 3. Forgery with queries | 5 forgery-selected originals: douglass_narrative_0026, dubois_souls_black_folk_0021, london_call_wild_0032, stevenson_treasure_0028, wells_time_machine_0022 | none (all 5 originals are unflagged) |
 
+## Attack 2: forgery with the key (`attacks/key/forge.py`)
+
+```bash
+python -m attacks.key.forge setup                     # once: scores all 10 originals, marks eligibility
+python -m attacks.key.forge start <id> --editor NAME  # 15-minute session on one eligible original
+python -m attacks.key.forge check <id>                # local score, swaps still needed, red words (free)
+python -m attacks.key.forge color WORD WORD ...       # colors of candidate replacements (free)
+python -m attacks.key.forge finish <id>               # keep best in-time version, verify with the service
+python -m attacks.key.forge packets                   # blind review sheets
+python -m attacks.key.forge report                    # summary.md, attempts.csv, totals.json
+```
+
+The key gives local, free color checks; only service queries count toward the
+100-request budget (each `finish` uses 1). Results go to
+`results/milestone2/attack2_key_forgery/`. Colors learned here must **not** be
+reused in Attack 3.
+
 Removal succeeds only if the output is unflagged **and** passes a blind quality
 check against both the watermarked input and the original. Forgery succeeds only
 if the output is flagged and passes a quality check against the original.
