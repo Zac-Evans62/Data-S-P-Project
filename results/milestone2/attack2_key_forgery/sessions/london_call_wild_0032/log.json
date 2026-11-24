@@ -1,0 +1,65 @@
+{
+  "passage_id": "london_call_wild_0032",
+  "editor": "Zac",
+  "forgery_selected": "yes",
+  "threshold": "0.63",
+  "target": "0.66",
+  "max_minutes": 15,
+  "max_requests": 100,
+  "started_at": "2026-11-24T19:37:53.951329+00:00",
+  "versions": [
+    {
+      "version": "v000",
+      "at": "2026-11-24T19:37:53.951342+00:00",
+      "green": 102,
+      "total": 172,
+      "score": 0.5930232558139535
+    },
+    {
+      "version": "v001",
+      "at": "2026-11-24T19:43:44.073149+00:00",
+      "green": 109,
+      "total": 169,
+      "score": 0.6449704142011834
+    },
+    {
+      "version": "v002",
+      "at": "2026-11-24T19:45:51.710640+00:00",
+      "green": 108,
+      "total": 166,
+      "score": 0.6506024096385542
+    },
+    {
+      "version": "v003",
+      "at": "2026-11-24T19:46:50.734472+00:00",
+      "green": 110,
+      "total": 166,
+      "score": 0.6626506024096386
+    }
+  ],
+  "queries": [
+    {
+      "at": "2026-11-24T19:47:03.469206+00:00",
+      "kind": "final verification",
+      "response": {
+        "ok": true,
+        "flagged": true,
+        "score": "0.663",
+        "request_id": "3104d68feeba"
+      },
+      "requests": 1
+    }
+  ],
+  "requests_used": 1,
+  "simulated_wait_seconds": 0.0,
+  "finished_at": "2026-11-24T19:47:03.469254+00:00",
+  "stop_reason": "target reached",
+  "final_version": "v003",
+  "service_result": {
+    "flagged": true,
+    "score": "0.663",
+    "error": null
+  },
+  "minutes_to_final": 8.9,
+  "late_versions_ignored": 0
+}

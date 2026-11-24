@@ -1,0 +1,58 @@
+{
+  "passage_id": "wells_time_machine_0022",
+  "editor": "Zac",
+  "forgery_selected": "yes",
+  "threshold": "0.63",
+  "target": "0.66",
+  "max_minutes": 15,
+  "max_requests": 100,
+  "started_at": "2026-11-24T20:12:51.823936+00:00",
+  "versions": [
+    {
+      "version": "v000",
+      "at": "2026-11-24T20:12:51.823950+00:00",
+      "green": 74,
+      "total": 125,
+      "score": 0.592
+    },
+    {
+      "version": "v001",
+      "at": "2026-11-24T20:16:02.235242+00:00",
+      "green": 81,
+      "total": 128,
+      "score": 0.6328125
+    },
+    {
+      "version": "v002",
+      "at": "2026-11-24T20:18:11.647600+00:00",
+      "green": 84,
+      "total": 127,
+      "score": 0.6614173228346457
+    }
+  ],
+  "queries": [
+    {
+      "at": "2026-11-24T20:18:31.566854+00:00",
+      "kind": "final verification",
+      "response": {
+        "ok": true,
+        "flagged": true,
+        "score": "0.661",
+        "request_id": "d5244779654e"
+      },
+      "requests": 1
+    }
+  ],
+  "requests_used": 1,
+  "simulated_wait_seconds": 0.0,
+  "finished_at": "2026-11-24T20:18:31.566883+00:00",
+  "stop_reason": "target reached",
+  "final_version": "v002",
+  "service_result": {
+    "flagged": true,
+    "score": "0.661",
+    "error": null
+  },
+  "minutes_to_final": 5.3,
+  "late_versions_ignored": 0
+}

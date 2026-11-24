@@ -1,0 +1,72 @@
+{
+  "passage_id": "stevenson_treasure_0028",
+  "editor": "Zac",
+  "forgery_selected": "yes",
+  "threshold": "0.63",
+  "target": "0.66",
+  "max_minutes": 15,
+  "max_requests": 100,
+  "started_at": "2026-11-24T19:59:10.337480+00:00",
+  "versions": [
+    {
+      "version": "v000",
+      "at": "2026-11-24T19:59:10.337492+00:00",
+      "green": 106,
+      "total": 187,
+      "score": 0.5668449197860963
+    },
+    {
+      "version": "v001",
+      "at": "2026-11-24T20:03:35.496246+00:00",
+      "green": 114,
+      "total": 189,
+      "score": 0.6031746031746031
+    },
+    {
+      "version": "v002",
+      "at": "2026-11-24T20:05:49.585862+00:00",
+      "green": 119,
+      "total": 187,
+      "score": 0.6363636363636364
+    },
+    {
+      "version": "v003",
+      "at": "2026-11-24T20:09:16.340492+00:00",
+      "green": 122,
+      "total": 189,
+      "score": 0.6455026455026455
+    },
+    {
+      "version": "v004",
+      "at": "2026-11-24T20:10:39.947548+00:00",
+      "green": 126,
+      "total": 188,
+      "score": 0.6702127659574468
+    }
+  ],
+  "queries": [
+    {
+      "at": "2026-11-24T20:10:54.123859+00:00",
+      "kind": "final verification",
+      "response": {
+        "ok": true,
+        "flagged": true,
+        "score": "0.670",
+        "request_id": "34ba993e12ab"
+      },
+      "requests": 1
+    }
+  ],
+  "requests_used": 1,
+  "simulated_wait_seconds": 0.0,
+  "finished_at": "2026-11-24T20:10:54.123881+00:00",
+  "stop_reason": "target reached",
+  "final_version": "v004",
+  "service_result": {
+    "flagged": true,
+    "score": "0.670",
+    "error": null
+  },
+  "minutes_to_final": 11.5,
+  "late_versions_ignored": 0
+}
