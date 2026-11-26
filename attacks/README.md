@@ -41,6 +41,29 @@ for the three character-change tests. Commit it and tag the commit
 | 2. Forgery with the key | 9 unmarked originals | thoreau_walden_0027 (original already flagged; record as a false positive) |
 | 3. Forgery with queries | 5 forgery-selected originals: douglass_narrative_0026, dubois_souls_black_folk_0021, london_call_wild_0032, stevenson_treasure_0028, wells_time_machine_0022 | none (all 5 originals are unflagged) |
 
+## Attack 1: removal with detector queries (`experiments/attack1.py` + `attacks/query/removal.py`)
+
+The driver (`experiments/attack1.py`) keeps the records and may compute hidden
+scores; the attacker logic (`attacks/query/removal.py`) sees only the client.
+The service runs in score mode with the rate limit on.
+
+```bash
+python -m experiments.attack1 setup                        # once: eligibility of the 10 watermarked outputs
+python -m experiments.attack1 chartests                    # the 3 character tests, automated, all passages
+python -m experiments.attack1 start <id> --editor NAME     # word substitution: 15 min, 100 requests
+python -m experiments.attack1 query <id>                   # send current edit (1 request)
+python -m experiments.attack1 probe <id> WORD WORD ...     # learn colors by repetition (1 request each)
+python -m experiments.attack1 finish <id>                  # keep the best queried version
+python -m experiments.attack1 packets                      # review sheets for UNFLAGGED outputs only
+python -m experiments.attack1 report                       # summary.md, attempts.csv, totals.json
+```
+
+Character-test predictions under our word rules: **case** is ignored (case folding);
+**zero-width** U+200B is deleted before tokenizing, so it is ignored; **punctuation**
+between words is ignored, but a hyphen *inside* a word splits it into two new words
+with fresh colors, which can lower the score at a cost in readability.
+Results go to `results/milestone2/attack1_query_removal/`.
+
 ## Attack 2: forgery with the key (`attacks/key/forge.py`)
 
 ```bash
