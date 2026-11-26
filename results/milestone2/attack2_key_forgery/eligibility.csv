@@ -1,0 +1,11 @@
+id,book_id,forgery_selected,service_score,service_flagged,exact_green,exact_total,eligible,note,requests
+douglass_narrative_0009,douglass_narrative,,0.572,False,103,180,yes,,1
+douglass_narrative_0026,douglass_narrative,yes,0.500,False,64,128,yes,,1
+doyle_sherlock_0009,doyle_sherlock,,0.543,False,100,184,yes,,1
+doyle_sherlock_0015,doyle_sherlock,,0.492,False,89,181,yes,,1
+dubois_souls_black_folk_0021,dubois_souls_black_folk,yes,0.588,False,97,165,yes,,1
+london_call_wild_0032,london_call_wild,yes,0.593,False,102,172,yes,,1
+london_call_wild_0037,london_call_wild,,0.556,False,60,108,yes,,1
+stevenson_treasure_0028,stevenson_treasure,yes,0.567,False,106,187,yes,,1
+thoreau_walden_0027,thoreau_walden,,0.686,True,107,156,no,"original already flagged: false positive, excluded",1
+wells_time_machine_0022,wells_time_machine,yes,0.592,False,74,125,yes,,1

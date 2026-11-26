@@ -1,0 +1,65 @@
+{
+  "passage_id": "doyle_sherlock_0009",
+  "editor": "Zac",
+  "forgery_selected": "",
+  "threshold": "0.63",
+  "target": "0.66",
+  "max_minutes": 15,
+  "max_requests": 100,
+  "started_at": "2026-11-24T18:52:23.981411+00:00",
+  "versions": [
+    {
+      "version": "v000",
+      "at": "2026-11-24T18:52:23.981424+00:00",
+      "green": 100,
+      "total": 184,
+      "score": 0.5434782608695652
+    },
+    {
+      "version": "v001",
+      "at": "2026-11-24T18:58:04.276739+00:00",
+      "green": 116,
+      "total": 185,
+      "score": 0.6270270270270271
+    },
+    {
+      "version": "v002",
+      "at": "2026-11-24T19:00:35.171783+00:00",
+      "green": 121,
+      "total": 185,
+      "score": 0.654054054054054
+    },
+    {
+      "version": "v003",
+      "at": "2026-11-24T19:01:40.017598+00:00",
+      "green": 123,
+      "total": 185,
+      "score": 0.6648648648648648
+    }
+  ],
+  "queries": [
+    {
+      "at": "2026-11-24T19:01:51.252279+00:00",
+      "kind": "final verification",
+      "response": {
+        "ok": true,
+        "flagged": true,
+        "score": "0.665",
+        "request_id": "35a2d1e6c531"
+      },
+      "requests": 1
+    }
+  ],
+  "requests_used": 1,
+  "simulated_wait_seconds": 0.0,
+  "finished_at": "2026-11-24T19:01:51.252305+00:00",
+  "stop_reason": "target reached",
+  "final_version": "v003",
+  "service_result": {
+    "flagged": true,
+    "score": "0.665",
+    "error": null
+  },
+  "minutes_to_final": 9.3,
+  "late_versions_ignored": 0
+}
