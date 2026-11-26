@@ -1,0 +1,18 @@
+{
+  "all": {
+    "eligible": 9,
+    "attempted": 9,
+    "flagged": 9,
+    "successes": 9,
+    "excluded_false_positives": [
+      "thoreau_walden_0027"
+    ]
+  },
+  "forgery_selected": {
+    "eligible": 5,
+    "attempted": 5,
+    "flagged": 5,
+    "successes": 5,
+    "excluded_false_positives": []
+  }
+}
