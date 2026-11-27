@@ -1,0 +1,37 @@
+{
+  "eligible": 9,
+  "excluded": {
+    "doyle_sherlock_0015": "output not flagged"
+  },
+  "variants": {
+    "word_substitution": {
+      "unflagged": 9,
+      "successes": 9,
+      "requests": 170
+    },
+    "case": {
+      "unflagged": 0,
+      "successes": 0,
+      "requests": 9
+    },
+    "zero_width": {
+      "unflagged": 0,
+      "successes": 0,
+      "requests": 9
+    },
+    "punctuation": {
+      "unflagged": 9,
+      "successes": 9,
+      "requests": 107
+    }
+  },
+  "character_overall": {
+    "successes": 9,
+    "requests": 125,
+    "simulated_seconds": 367.0
+  },
+  "word_substitution_time": {
+    "editing_minutes": 48.6,
+    "rate_limit_wait_seconds": 320.0
+  }
+}

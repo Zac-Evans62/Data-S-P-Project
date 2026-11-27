@@ -1,0 +1,193 @@
+{
+  "passage_id": "wells_time_machine_0022",
+  "requests_used": 25,
+  "simulated_wait_seconds": 80.0,
+  "simulated_seconds": 105.0,
+  "tests": {
+    "case": {
+      "prediction": "ignored: case folding makes the words identical",
+      "queries": 1,
+      "response": {
+        "ok": true,
+        "flagged": true,
+        "score": "0.669",
+        "request_id": "e3181c9e19e2"
+      },
+      "unflagged": false,
+      "changed_words_vs_watermarked": 0,
+      "exact": {
+        "green": 87,
+        "total": 130,
+        "distinct": 89,
+        "score": 0.6692307692307692,
+        "flagged": true
+      },
+      "steps": []
+    },
+    "zero_width": {
+      "prediction": "ignored: U+200B is deleted before tokenizing, so every word is unchanged",
+      "queries": 1,
+      "response": {
+        "ok": true,
+        "flagged": true,
+        "score": "0.669",
+        "request_id": "36eb4ed2cf4e"
+      },
+      "unflagged": false,
+      "changed_words_vs_watermarked": 0,
+      "exact": {
+        "green": 87,
+        "total": 130,
+        "distinct": 89,
+        "score": 0.6692307692307692,
+        "flagged": true
+      },
+      "steps": []
+    },
+    "punctuation": {
+      "prediction": "punctuation between words is ignored; a hyphen inside a word splits it into two new words with fresh colors, which can lower the score but hurts readability",
+      "queries": 23,
+      "response": {
+        "ok": true,
+        "flagged": false,
+        "score": "0.628",
+        "request_id": "877296d7115a"
+      },
+      "unflagged": true,
+      "changed_words_vs_watermarked": 14,
+      "exact": {
+        "green": 86,
+        "total": 137,
+        "distinct": 96,
+        "score": 0.6277372262773723,
+        "flagged": false
+      },
+      "steps": [
+        {
+          "step": "between-word punctuation",
+          "flagged": true,
+          "score": "0.669"
+        },
+        {
+          "step": "baseline",
+          "flagged": true,
+          "score": "0.669"
+        },
+        {
+          "step": "hyphenate 'proportionately'",
+          "kept": false,
+          "flagged": true,
+          "score": "0.679"
+        },
+        {
+          "step": "hyphenate 'hypertrophied'",
+          "kept": false,
+          "flagged": true,
+          "score": "0.672"
+        },
+        {
+          "step": "hyphenate 'innumerable'",
+          "kept": true,
+          "flagged": true,
+          "score": "0.664"
+        },
+        {
+          "step": "hyphenate 'critisized'",
+          "kept": false,
+          "flagged": true,
+          "score": "0.667"
+        },
+        {
+          "step": "hyphenate 'channelled'",
+          "kept": true,
+          "flagged": true,
+          "score": "0.652"
+        },
+        {
+          "step": "hyphenate 'frequented'",
+          "kept": false,
+          "flagged": true,
+          "score": "0.662"
+        },
+        {
+          "step": "hyphenate 'Transverse'",
+          "kept": false,
+          "flagged": true,
+          "score": "0.654"
+        },
+        {
+          "step": "hyphenate 'recognised'",
+          "kept": false,
+          "flagged": true,
+          "score": "0.654"
+        },
+        {
+          "step": "hyphenate 'enterence'",
+          "kept": true,
+          "flagged": true,
+          "score": "0.647"
+        },
+        {
+          "step": "hyphenate 'revealing'",
+          "kept": false,
+          "flagged": true,
+          "score": "0.649"
+        },
+        {
+          "step": "hyphenate 'partially'",
+          "kept": false,
+          "flagged": true,
+          "score": "0.649"
+        },
+        {
+          "step": "hyphenate 'pigmented'",
+          "kept": false,
+          "flagged": true,
+          "score": "0.657"
+        },
+        {
+          "step": "hyphenate 'partially'",
+          "kept": false,
+          "flagged": true,
+          "score": "0.649"
+        },
+        {
+          "step": "hyphenate 'lifetimes'",
+          "kept": true,
+          "flagged": true,
+          "score": "0.642"
+        },
+        {
+          "step": "hyphenate 'raspberry'",
+          "kept": false,
+          "flagged": true,
+          "score": "0.652"
+        },
+        {
+          "step": "hyphenate 'building'",
+          "kept": true,
+          "flagged": true,
+          "score": "0.637"
+        },
+        {
+          "step": "hyphenate 'unglazed'",
+          "kept": false,
+          "flagged": true,
+          "score": "0.640"
+        },
+        {
+          "step": "hyphenate 'admitted'",
+          "kept": true,
+          "flagged": true,
+          "score": "0.632"
+        },
+        {
+          "step": "hyphenate 'tempered'",
+          "kept": true,
+          "flagged": false,
+          "score": "0.628"
+        }
+      ]
+    }
+  }
+}

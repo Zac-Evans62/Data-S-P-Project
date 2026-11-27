@@ -1,0 +1,103 @@
+{
+  "passage_id": "stevenson_treasure_0028",
+  "requests_used": 8,
+  "simulated_wait_seconds": 0.0,
+  "simulated_seconds": 8.0,
+  "tests": {
+    "case": {
+      "prediction": "ignored: case folding makes the words identical",
+      "queries": 1,
+      "response": {
+        "ok": true,
+        "flagged": true,
+        "score": "0.640",
+        "request_id": "177702f406ca"
+      },
+      "unflagged": false,
+      "changed_words_vs_watermarked": 0,
+      "exact": {
+        "green": 119,
+        "total": 186,
+        "distinct": 120,
+        "score": 0.6397849462365591,
+        "flagged": true
+      },
+      "steps": []
+    },
+    "zero_width": {
+      "prediction": "ignored: U+200B is deleted before tokenizing, so every word is unchanged",
+      "queries": 1,
+      "response": {
+        "ok": true,
+        "flagged": true,
+        "score": "0.640",
+        "request_id": "ec749887d84f"
+      },
+      "unflagged": false,
+      "changed_words_vs_watermarked": 0,
+      "exact": {
+        "green": 119,
+        "total": 186,
+        "distinct": 120,
+        "score": 0.6397849462365591,
+        "flagged": true
+      },
+      "steps": []
+    },
+    "punctuation": {
+      "prediction": "punctuation between words is ignored; a hyphen inside a word splits it into two new words with fresh colors, which can lower the score but hurts readability",
+      "queries": 6,
+      "response": {
+        "ok": true,
+        "flagged": false,
+        "score": "0.628",
+        "request_id": "cfed95ed7919"
+      },
+      "unflagged": true,
+      "changed_words_vs_watermarked": 4,
+      "exact": {
+        "green": 118,
+        "total": 188,
+        "distinct": 123,
+        "score": 0.6276595744680851,
+        "flagged": false
+      },
+      "steps": [
+        {
+          "step": "between-word punctuation",
+          "flagged": true,
+          "score": "0.640"
+        },
+        {
+          "step": "baseline",
+          "flagged": true,
+          "score": "0.640"
+        },
+        {
+          "step": "hyphenate 'frightened'",
+          "kept": false,
+          "flagged": true,
+          "score": "0.647"
+        },
+        {
+          "step": "hyphenate 'maintained'",
+          "kept": false,
+          "flagged": true,
+          "score": "0.642"
+        },
+        {
+          "step": "hyphenate 'enclosure'",
+          "kept": true,
+          "flagged": true,
+          "score": "0.636"
+        },
+        {
+          "step": "hyphenate 'evidently'",
+          "kept": true,
+          "flagged": false,
+          "score": "0.628"
+        }
+      ]
+    }
+  }
+}
