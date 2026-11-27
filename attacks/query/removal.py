@@ -105,13 +105,15 @@ def run_character_tests(client, wait, watermarked: str, budget: Budget) -> dict:
     results = {}
 
     def single(name, text, prediction):
+        before = budget.used
         try:
             r = submit(client, wait, text, budget)
         except BudgetExhausted:
-            results[name] = {"output": watermarked, "response": None, "queries": 0, "success_candidate": False,
-                             "prediction": prediction, "note": "budget exhausted before test"}
+            results[name] = {"output": watermarked, "response": None, "queries": budget.used - before,
+                             "success_candidate": False, "prediction": prediction, "note": "budget exhausted before test"}
             return
-        results[name] = {"output": text, "response": r, "queries": 1, "prediction": prediction,
+        # queries includes any requests the rate limit rejected before this one succeeded
+        results[name] = {"output": text, "response": r, "queries": budget.used - before, "prediction": prediction,
                          "success_candidate": _flagged(r) is False}
 
     used_before = budget.used

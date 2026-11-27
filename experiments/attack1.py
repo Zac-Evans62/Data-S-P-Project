@@ -417,7 +417,7 @@ def _quality(reviews: dict, pid: str, variant: str) -> str:
 def cmd_report(args):
     elig = eligibility()
     reviews = {(r["passage_id"], r["variant"]): r for r in read_csv(REVIEWS)}
-    rows, problems = [], []
+    rows, problems, char_budget = [], [], {}
     eligible_ids = [p for p, e in elig.items() if e["eligible"] == "yes"]
     for pid in eligible_ids:
         e = elig[pid]
@@ -442,11 +442,18 @@ def cmd_report(args):
         cl = CHAR_DIR / pid / "log.json"
         if cl.exists():
             rec = json.loads(cl.read_text(encoding="utf-8"))
+            # Per-test counts: the submissions each test made. Requests the rate limit rejected
+            # (and that were retried) are charged to the passage's shared budget, reported per passage.
+            subs = {"case": 1, "zero_width": 1,
+                    "punctuation": sum(1 for st in rec["tests"]["punctuation"]["steps"] if st.get("step") != "budget exhausted")}
+            char_budget[pid] = {"requests_used": rec["requests_used"], "submissions": sum(subs.values()),
+                                "rate_limited_retries": rec["requests_used"] - sum(subs.values()),
+                                "simulated_seconds": rec["simulated_seconds"]}
             for name in CHAR_TESTS:
                 t = rec["tests"][name]
                 q = _quality(reviews, pid, name) if t["unflagged"] else "n/a (still flagged)"
                 rows.append(dict(base, variant=name, editor="automated", final_score=(t["response"] or {}).get("score", ""),
-                                 unflagged=t["unflagged"], requests=t["queries"], changed_words=t["changed_words_vs_watermarked"],
+                                 unflagged=t["unflagged"], requests=subs[name], changed_words=t["changed_words_vs_watermarked"],
                                  quality=q, success=t["unflagged"] and q == "usable"))
                 if t["unflagged"] and q in ("not reviewed", "invalid review"):
                     problems.append(f"{pid} {name}: {q}")
@@ -466,7 +473,8 @@ def cmd_report(args):
         variant_rows.append((v, sum(bool(r.get("unflagged")) for r in vs), sum(bool(r.get("success")) for r in vs),
                              sum(int(r.get("requests") or 0) for r in vs)))
     any_char = sum(any(r.get("success") for r in rows if r["id"] == p and r["variant"] in CHAR_TESTS) for p in eligible_ids)
-    char_requests = sum(int(r.get("requests") or 0) for r in rows if r["variant"] in CHAR_TESTS)
+    char_requests = sum(c["requests_used"] for c in char_budget.values())
+    char_retries = sum(c["rate_limited_retries"] for c in char_budget.values())
     char_sim = sum(json.loads((CHAR_DIR / p / "log.json").read_text(encoding="utf-8"))["simulated_seconds"]
                    for p in eligible_ids if (CHAR_DIR / p / "log.json").exists())
     word_rows = [r for r in rows if r["variant"] == "word_substitution" and r.get("minutes") is not None]
@@ -474,7 +482,9 @@ def cmd_report(args):
     word_wait = sum(float(r.get("simulated_wait_s") or 0) for r in word_rows)
     totals = {"eligible": n, "excluded": {p: e["note"] for p, e in elig.items() if e["eligible"] != "yes"},
               "variants": {v: {"unflagged": u, "successes": s, "requests": q} for v, u, s, q in variant_rows},
-              "character_overall": {"successes": any_char, "requests": char_requests, "simulated_seconds": char_sim},
+              "character_overall": {"successes": any_char, "requests": char_requests,
+                                    "rate_limited_retries": char_retries, "simulated_seconds": char_sim,
+                                    "per_passage": char_budget},
               "word_substitution_time": {"editing_minutes": round(word_minutes, 1), "rate_limit_wait_seconds": word_wait}}
     (RUN_DIR / "totals.json").write_text(json.dumps(totals, indent=2) + "\n", encoding="utf-8")
 
@@ -483,10 +493,12 @@ def cmd_report(args):
          f"100 requests per passage; the three character tests share one 100-request budget per passage.", "",
          f"Eligible watermarked outputs: {n}. Excluded: "
          + (", ".join(f"{p} ({why})" for p, why in totals["excluded"].items()) or "none"), "",
-         "| Variant | Unflagged | Successes (unflagged and usable) | Requests (total) |", "|---|---|---|---|"]
+         "| Variant | Unflagged | Successes (unflagged and usable) | Requests |", "|---|---|---|---|"]
     for v, u, s, q in variant_rows:
         L.append(f"| {v.replace('_', ' ')} | {u}/{n} | {rate(s)} | {q} |")
     L.append(f"| **character changes overall** (any of the three) | | {rate(any_char)} | {char_requests} |")
+    L += ["", f"Character-test requests per test count submissions; the overall total ({char_requests}) also includes "
+              f"{char_retries} request(s) rejected by the rate limit and retried, charged to each passage's shared budget."]
     L += ["", f"Time: word substitution used {word_minutes:.1f} editing minutes in total "
               f"(plus {word_wait:.0f} simulated seconds waiting out rate limits); the automated character tests took "
               f"{char_sim:.0f} simulated seconds in total (1 second per request plus rate-limit waits). "
