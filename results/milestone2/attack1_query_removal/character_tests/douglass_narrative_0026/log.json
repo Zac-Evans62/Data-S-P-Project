@@ -1,0 +1,91 @@
+{
+  "passage_id": "douglass_narrative_0026",
+  "requests_used": 6,
+  "simulated_wait_seconds": 0.0,
+  "simulated_seconds": 6.0,
+  "tests": {
+    "case": {
+      "prediction": "ignored: case folding makes the words identical",
+      "queries": 1,
+      "response": {
+        "ok": true,
+        "flagged": true,
+        "score": "0.630",
+        "request_id": "61afdb385b42"
+      },
+      "unflagged": false,
+      "changed_words_vs_watermarked": 0,
+      "exact": {
+        "green": 87,
+        "total": 138,
+        "distinct": 100,
+        "score": 0.6304347826086957,
+        "flagged": true
+      },
+      "steps": []
+    },
+    "zero_width": {
+      "prediction": "ignored: U+200B is deleted before tokenizing, so every word is unchanged",
+      "queries": 1,
+      "response": {
+        "ok": true,
+        "flagged": true,
+        "score": "0.630",
+        "request_id": "3eed62dff61f"
+      },
+      "unflagged": false,
+      "changed_words_vs_watermarked": 0,
+      "exact": {
+        "green": 87,
+        "total": 138,
+        "distinct": 100,
+        "score": 0.6304347826086957,
+        "flagged": true
+      },
+      "steps": []
+    },
+    "punctuation": {
+      "prediction": "punctuation between words is ignored; a hyphen inside a word splits it into two new words with fresh colors, which can lower the score but hurts readability",
+      "queries": 4,
+      "response": {
+        "ok": true,
+        "flagged": false,
+        "score": "0.626",
+        "request_id": "197f0433bd71"
+      },
+      "unflagged": true,
+      "changed_words_vs_watermarked": 2,
+      "exact": {
+        "green": 87,
+        "total": 139,
+        "distinct": 101,
+        "score": 0.6258992805755396,
+        "flagged": false
+      },
+      "steps": [
+        {
+          "step": "between-word punctuation",
+          "flagged": true,
+          "score": "0.630"
+        },
+        {
+          "step": "baseline",
+          "flagged": true,
+          "score": "0.630"
+        },
+        {
+          "step": "hyphenate 'determination'",
+          "kept": false,
+          "flagged": true,
+          "score": "0.633"
+        },
+        {
+          "step": "hyphenate 'particularly'",
+          "kept": true,
+          "flagged": false,
+          "score": "0.626"
+        }
+      ]
+    }
+  }
+}

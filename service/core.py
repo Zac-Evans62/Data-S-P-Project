@@ -48,19 +48,44 @@ def hash_token(token: str) -> str:
     return hashlib.sha256(token.encode("utf-8")).hexdigest()
 
 
+RETRIES = 60  # about 10 seconds in total
+
+
+def _retry(action):
+    """Run a file operation, retrying while another program holds the file.
+
+    On Windows, sync tools (OneDrive, Dropbox) and antivirus scanners briefly
+    lock files they are reading, and replacing a locked file fails with
+    PermissionError ("Access is denied"). The lock lasts milliseconds, so
+    waiting and retrying is safe."""
+    for attempt in range(RETRIES):
+        try:
+            return action()
+        except PermissionError:
+            if attempt == RETRIES - 1:
+                raise
+            time.sleep(min(0.02 * (attempt + 1), 0.3))
+
+
 def read_json(path: Path, default):
     if not path.exists():
         return default
-    with open(path, encoding="utf-8") as f:
-        return json.load(f)
+
+    def read():
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
+    return _retry(read)
 
 
 def write_json(path: Path, data) -> None:
     """Write atomically, so a crash never leaves a half-written state file."""
     tmp = path.with_suffix(path.suffix + ".tmp")
-    with open(tmp, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2)
-    os.replace(tmp, path)
+
+    def write():
+        with open(tmp, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=2)
+    _retry(write)
+    _retry(lambda: os.replace(tmp, path))
 
 
 def load_config(state_dir: Path) -> dict:

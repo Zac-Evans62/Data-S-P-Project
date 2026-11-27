@@ -1,0 +1,40 @@
+{
+  "passage_id": "douglass_narrative_0026",
+  "editor": "Zac",
+  "max_minutes": 15,
+  "max_requests": 100,
+  "started_at": "2026-11-26T23:39:28.903760+00:00",
+  "versions": [
+    {
+      "version": "v000",
+      "at": "2026-11-26T23:39:28.903773+00:00",
+      "queried": false
+    },
+    {
+      "version": "v001",
+      "at": "2026-11-26T23:41:03.708594+00:00",
+      "queried": true,
+      "response": {
+        "ok": true,
+        "flagged": false,
+        "score": "0.619",
+        "error": null
+      },
+      "queried_at": "2026-11-26T23:41:03.924227+00:00"
+    }
+  ],
+  "probes": [],
+  "requests_used": 1,
+  "simulated_wait_seconds": 0.0,
+  "finished_at": "2026-11-26T23:41:12.420152+00:00",
+  "final_version": "v001",
+  "stop_reason": "unflagged",
+  "minutes_used": 1.7,
+  "unqueried_versions": 0,
+  "final_response": {
+    "ok": true,
+    "flagged": false,
+    "score": "0.619",
+    "error": null
+  }
+}

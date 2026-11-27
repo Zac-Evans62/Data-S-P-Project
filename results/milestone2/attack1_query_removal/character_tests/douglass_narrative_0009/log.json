@@ -1,0 +1,133 @@
+{
+  "passage_id": "douglass_narrative_0009",
+  "requests_used": 13,
+  "simulated_wait_seconds": 0.0,
+  "simulated_seconds": 13.0,
+  "tests": {
+    "case": {
+      "prediction": "ignored: case folding makes the words identical",
+      "queries": 1,
+      "response": {
+        "ok": true,
+        "flagged": true,
+        "score": "0.663",
+        "request_id": "eba86bb42f92"
+      },
+      "unflagged": false,
+      "changed_words_vs_watermarked": 0,
+      "exact": {
+        "green": 118,
+        "total": 178,
+        "distinct": 101,
+        "score": 0.6629213483146067,
+        "flagged": true
+      },
+      "steps": []
+    },
+    "zero_width": {
+      "prediction": "ignored: U+200B is deleted before tokenizing, so every word is unchanged",
+      "queries": 1,
+      "response": {
+        "ok": true,
+        "flagged": true,
+        "score": "0.663",
+        "request_id": "c46b7698d434"
+      },
+      "unflagged": false,
+      "changed_words_vs_watermarked": 0,
+      "exact": {
+        "green": 118,
+        "total": 178,
+        "distinct": 101,
+        "score": 0.6629213483146067,
+        "flagged": true
+      },
+      "steps": []
+    },
+    "punctuation": {
+      "prediction": "punctuation between words is ignored; a hyphen inside a word splits it into two new words with fresh colors, which can lower the score but hurts readability",
+      "queries": 11,
+      "response": {
+        "ok": true,
+        "flagged": false,
+        "score": "0.627",
+        "request_id": "0f52ae82d637"
+      },
+      "unflagged": true,
+      "changed_words_vs_watermarked": 14,
+      "exact": {
+        "green": 116,
+        "total": 185,
+        "distinct": 107,
+        "score": 0.6270270270270271,
+        "flagged": false
+      },
+      "steps": [
+        {
+          "step": "between-word punctuation",
+          "flagged": true,
+          "score": "0.663"
+        },
+        {
+          "step": "baseline",
+          "flagged": true,
+          "score": "0.663"
+        },
+        {
+          "step": "hyphenate 'considerable'",
+          "kept": false,
+          "flagged": true,
+          "score": "0.665"
+        },
+        {
+          "step": "hyphenate 'development'",
+          "kept": true,
+          "flagged": true,
+          "score": "0.659"
+        },
+        {
+          "step": "hyphenate 'Frequently'",
+          "kept": true,
+          "flagged": true,
+          "score": "0.656"
+        },
+        {
+          "step": "hyphenate 'separation'",
+          "kept": true,
+          "flagged": true,
+          "score": "0.646"
+        },
+        {
+          "step": "hyphenate 'inevitable'",
+          "kept": true,
+          "flagged": true,
+          "score": "0.643"
+        },
+        {
+          "step": "hyphenate 'parentage'",
+          "kept": true,
+          "flagged": true,
+          "score": "0.639"
+        },
+        {
+          "step": "hyphenate 'separated'",
+          "kept": false,
+          "flagged": true,
+          "score": "0.641"
+        },
+        {
+          "step": "hyphenate 'admitted'",
+          "kept": true,
+          "flagged": true,
+          "score": "0.636"
+        },
+        {
+          "step": "hyphenate 'everyone'",
+          "kept": true,
+          "flagged": false,
+          "score": "0.627"
+        }
+      ]
+    }
+  }
+}

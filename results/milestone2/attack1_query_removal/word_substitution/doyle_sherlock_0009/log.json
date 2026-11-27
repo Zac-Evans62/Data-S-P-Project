@@ -1,0 +1,314 @@
+{
+  "passage_id": "doyle_sherlock_0009",
+  "editor": "Zac",
+  "max_minutes": 15,
+  "max_requests": 100,
+  "started_at": "2026-11-26T23:19:13.878070+00:00",
+  "versions": [
+    {
+      "version": "v000",
+      "at": "2026-11-26T23:19:13.878084+00:00",
+      "queried": false
+    },
+    {
+      "version": "v001",
+      "at": "2026-11-26T23:21:54.644654+00:00",
+      "queried": true,
+      "response": {
+        "ok": true,
+        "flagged": true,
+        "score": "0.642",
+        "error": null
+      },
+      "queried_at": "2026-11-26T23:21:54.838686+00:00"
+    },
+    {
+      "version": "v002",
+      "at": "2026-11-26T23:22:55.672832+00:00",
+      "queried": true,
+      "response": {
+        "ok": true,
+        "flagged": true,
+        "score": "0.634",
+        "error": null
+      },
+      "queried_at": "2026-11-26T23:22:55.907456+00:00"
+    },
+    {
+      "version": "v003",
+      "at": "2026-11-26T23:23:40.227621+00:00",
+      "queried": true,
+      "response": {
+        "ok": true,
+        "flagged": true,
+        "score": "0.649",
+        "error": null
+      },
+      "queried_at": "2026-11-26T23:23:40.425841+00:00"
+    },
+    {
+      "version": "v004",
+      "at": "2026-11-26T23:26:26.354298+00:00",
+      "queried": true,
+      "response": {
+        "ok": true,
+        "flagged": true,
+        "score": "0.630",
+        "error": null
+      },
+      "queried_at": "2026-11-26T23:26:26.537607+00:00"
+    },
+    {
+      "version": "v005",
+      "at": "2026-11-26T23:27:53.014903+00:00",
+      "queried": true,
+      "response": {
+        "ok": true,
+        "flagged": false,
+        "score": "0.626",
+        "error": null
+      },
+      "queried_at": "2026-11-26T23:27:53.182988+00:00"
+    }
+  ],
+  "probes": [
+    {
+      "word": "scared",
+      "color": "red",
+      "at": "2026-11-26T23:24:36.573150+00:00"
+    },
+    {
+      "word": "chair",
+      "color": "red",
+      "at": "2026-11-26T23:24:58.082576+00:00"
+    },
+    {
+      "word": "There",
+      "color": "green",
+      "at": "2026-11-26T23:25:21.077421+00:00"
+    },
+    {
+      "word": "is",
+      "color": "red",
+      "at": "2026-11-26T23:25:21.253934+00:00"
+    },
+    {
+      "word": "no",
+      "color": "green",
+      "at": "2026-11-26T23:25:21.428726+00:00"
+    },
+    {
+      "word": "way",
+      "color": "green",
+      "at": "2026-11-26T23:25:21.598812+00:00"
+    },
+    {
+      "word": "you",
+      "color": "red",
+      "at": "2026-11-26T23:25:21.790681+00:00"
+    },
+    {
+      "word": "can",
+      "color": "red",
+      "at": "2026-11-26T23:25:21.986547+00:00"
+    },
+    {
+      "word": "get",
+      "color": "red",
+      "at": "2026-11-26T23:25:22.180603+00:00"
+    },
+    {
+      "word": "out",
+      "color": "red",
+      "at": "2026-11-26T23:25:22.349654+00:00"
+    },
+    {
+      "word": "of",
+      "color": "green",
+      "at": "2026-11-26T23:25:22.537539+00:00"
+    },
+    {
+      "word": "it",
+      "color": "red",
+      "at": "2026-11-26T23:25:22.770942+00:00"
+    },
+    {
+      "word": "Mr.",
+      "color": "red",
+      "at": "2026-11-26T23:25:22.931435+00:00"
+    },
+    {
+      "word": "Windibank.",
+      "color": "green",
+      "at": "2026-11-26T23:25:23.298408+00:00"
+    },
+    {
+      "word": "It",
+      "color": "red",
+      "at": "2026-11-26T23:25:23.453565+00:00"
+    },
+    {
+      "word": "is",
+      "color": "red",
+      "at": "2026-11-26T23:25:23.602680+00:00"
+    },
+    {
+      "word": "quite",
+      "color": "green",
+      "at": "2026-11-26T23:25:23.757990+00:00"
+    },
+    {
+      "word": "too",
+      "color": "green",
+      "at": "2026-11-26T23:25:23.932272+00:00"
+    },
+    {
+      "word": "evident",
+      "color": "green",
+      "at": "2026-11-26T23:25:24.102184+00:00"
+    },
+    {
+      "word": "I",
+      "color": "green",
+      "at": "2026-11-26T23:27:07.828923+00:00"
+    },
+    {
+      "word": "am",
+      "color": "green",
+      "at": "2026-11-26T23:27:07.999654+00:00"
+    },
+    {
+      "word": "very",
+      "color": "green",
+      "at": "2026-11-26T23:27:08.269724+00:00"
+    },
+    {
+      "word": "scared",
+      "color": "red",
+      "at": "2026-11-26T23:27:08.434295+00:00"
+    },
+    {
+      "word": "that",
+      "color": "red",
+      "at": "2026-11-26T23:27:08.601715+00:00"
+    },
+    {
+      "word": "it",
+      "color": "red",
+      "at": "2026-11-26T23:27:08.775493+00:00"
+    },
+    {
+      "word": "is",
+      "color": "red",
+      "at": "2026-11-26T23:27:08.946376+00:00"
+    },
+    {
+      "word": "not.",
+      "color": "green",
+      "at": "2026-11-26T23:27:09.116166+00:00"
+    },
+    {
+      "word": "But",
+      "color": "red",
+      "at": "2026-11-26T23:27:09.290768+00:00"
+    },
+    {
+      "word": "between",
+      "color": "red",
+      "at": "2026-11-26T23:27:09.474873+00:00"
+    },
+    {
+      "word": "us",
+      "color": "green",
+      "at": "2026-11-26T23:27:09.655242+00:00"
+    },
+    {
+      "word": "Windibank",
+      "color": "green",
+      "at": "2026-11-26T23:27:09.827377+00:00"
+    },
+    {
+      "word": "it",
+      "color": "red",
+      "at": "2026-11-26T23:27:10.018786+00:00"
+    },
+    {
+      "word": "was",
+      "color": "red",
+      "at": "2026-11-26T23:27:10.365775+00:00"
+    },
+    {
+      "word": "as",
+      "color": "green",
+      "at": "2026-11-26T23:27:10.535146+00:00"
+    },
+    {
+      "word": "brutal",
+      "color": "green",
+      "at": "2026-11-26T23:27:10.711990+00:00"
+    },
+    {
+      "word": "and",
+      "color": "green",
+      "at": "2026-11-26T23:27:10.872231+00:00"
+    },
+    {
+      "word": "selfish",
+      "color": "green",
+      "at": "2026-11-26T23:27:11.174715+00:00"
+    },
+    {
+      "word": "and",
+      "color": "green",
+      "at": "2026-11-26T23:27:11.360548+00:00"
+    },
+    {
+      "word": "callous",
+      "color": "green",
+      "at": "2026-11-26T23:27:11.556674+00:00"
+    },
+    {
+      "word": "a",
+      "color": "green",
+      "at": "2026-11-26T23:27:11.723846+00:00"
+    },
+    {
+      "word": "trick",
+      "color": "green",
+      "at": "2026-11-26T23:27:12.032853+00:00"
+    },
+    {
+      "word": "in",
+      "color": "red",
+      "at": "2026-11-26T23:27:12.191091+00:00"
+    },
+    {
+      "word": "a",
+      "color": "green",
+      "at": "2026-11-26T23:27:12.373676+00:00"
+    },
+    {
+      "word": "petty",
+      "color": "green",
+      "at": "2026-11-26T23:27:12.534972+00:00"
+    },
+    {
+      "word": "way",
+      "color": "green",
+      "at": "2026-11-26T23:27:12.756847+00:00"
+    }
+  ],
+  "requests_used": 52,
+  "simulated_wait_seconds": 80.0,
+  "finished_at": "2026-11-26T23:28:18.843199+00:00",
+  "final_version": "v005",
+  "stop_reason": "unflagged",
+  "minutes_used": 9.1,
+  "unqueried_versions": 0,
+  "final_response": {
+    "ok": true,
+    "flagged": false,
+    "score": "0.626",
+    "error": null
+  }
+}
