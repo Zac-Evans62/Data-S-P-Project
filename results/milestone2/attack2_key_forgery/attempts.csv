@@ -1,0 +1,11 @@
+id,forgery_selected,eligible,status,editor,original_score,final_score,flagged,reached_target,changed_words,minutes_to_final,requests_used,simulated_wait_seconds,stop_reason,quality,quality_problems,success
+douglass_narrative_0009,,yes,finished,Zac,0.572,0.667,True,True,21,11.1,1,0.0,target reached,usable,,True
+douglass_narrative_0026,yes,yes,finished,Zac,0.500,0.662,True,True,43,11.7,1,0.0,target reached,usable,,True
+doyle_sherlock_0009,,yes,finished,Zac,0.543,0.665,True,True,25,9.3,1,0.0,target reached,usable,,True
+doyle_sherlock_0015,,yes,finished,Zac,0.492,0.645,True,False,43,14.4,1,0.0,time limit reached,usable,,True
+dubois_souls_black_folk_0021,yes,yes,finished,Zac,0.588,0.660,True,True,25,7.0,1,0.0,target reached,usable,,True
+london_call_wild_0032,yes,yes,finished,Zac,0.593,0.663,True,True,21,8.9,1,0.0,target reached,usable,,True
+london_call_wild_0037,,yes,finished,Zac,0.556,0.667,True,True,24,8.2,1,0.0,target reached,usable,,True
+stevenson_treasure_0028,yes,yes,finished,Zac,0.567,0.670,True,True,31,11.5,1,0.0,target reached,usable,,True
+thoreau_walden_0027,,no,excluded (original already flagged),,0.686,,,,,,,,,,,
+wells_time_machine_0022,yes,yes,finished,Zac,0.592,0.661,True,True,13,5.3,1,0.0,target reached,usable,,True

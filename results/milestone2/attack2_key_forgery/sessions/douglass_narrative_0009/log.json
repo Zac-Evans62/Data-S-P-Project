@@ -1,0 +1,72 @@
+{
+  "passage_id": "douglass_narrative_0009",
+  "editor": "Zac",
+  "forgery_selected": "",
+  "threshold": "0.63",
+  "target": "0.66",
+  "max_minutes": 15,
+  "max_requests": 100,
+  "started_at": "2026-11-24T18:16:43.897768+00:00",
+  "versions": [
+    {
+      "version": "v000",
+      "at": "2026-11-24T18:16:43.897800+00:00",
+      "green": 103,
+      "total": 180,
+      "score": 0.5722222222222222
+    },
+    {
+      "version": "v001",
+      "at": "2026-11-24T18:23:44.176867+00:00",
+      "green": 109,
+      "total": 180,
+      "score": 0.6055555555555555
+    },
+    {
+      "version": "v002",
+      "at": "2026-11-24T18:25:01.733983+00:00",
+      "green": 116,
+      "total": 180,
+      "score": 0.6444444444444445
+    },
+    {
+      "version": "v003",
+      "at": "2026-11-24T18:27:11.871668+00:00",
+      "green": 118,
+      "total": 180,
+      "score": 0.6555555555555556
+    },
+    {
+      "version": "v004",
+      "at": "2026-11-24T18:27:51.247513+00:00",
+      "green": 120,
+      "total": 180,
+      "score": 0.6666666666666666
+    }
+  ],
+  "queries": [
+    {
+      "at": "2026-11-24T18:28:05.754583+00:00",
+      "kind": "final verification",
+      "response": {
+        "ok": true,
+        "flagged": true,
+        "score": "0.667",
+        "request_id": "baa3e187fd02"
+      },
+      "requests": 1
+    }
+  ],
+  "requests_used": 1,
+  "simulated_wait_seconds": 0.0,
+  "finished_at": "2026-11-24T18:28:05.754611+00:00",
+  "stop_reason": "target reached",
+  "final_version": "v004",
+  "service_result": {
+    "flagged": true,
+    "score": "0.667",
+    "error": null
+  },
+  "minutes_to_final": 11.1,
+  "late_versions_ignored": 0
+}

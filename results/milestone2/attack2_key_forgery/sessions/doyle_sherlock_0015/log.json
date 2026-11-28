@@ -1,0 +1,72 @@
+{
+  "passage_id": "doyle_sherlock_0015",
+  "editor": "Zac",
+  "forgery_selected": "",
+  "threshold": "0.63",
+  "target": "0.66",
+  "max_minutes": 15,
+  "max_requests": 100,
+  "started_at": "2026-11-24T19:03:02.643158+00:00",
+  "versions": [
+    {
+      "version": "v000",
+      "at": "2026-11-24T19:03:02.643172+00:00",
+      "green": 89,
+      "total": 181,
+      "score": 0.49171270718232046
+    },
+    {
+      "version": "v001",
+      "at": "2026-11-24T19:08:07.769604+00:00",
+      "green": 92,
+      "total": 180,
+      "score": 0.5111111111111111
+    },
+    {
+      "version": "v002",
+      "at": "2026-11-24T19:10:13.702371+00:00",
+      "green": 102,
+      "total": 174,
+      "score": 0.5862068965517241
+    },
+    {
+      "version": "v003",
+      "at": "2026-11-24T19:13:57.143155+00:00",
+      "green": 111,
+      "total": 179,
+      "score": 0.6201117318435754
+    },
+    {
+      "version": "v004",
+      "at": "2026-11-24T19:17:28.252536+00:00",
+      "green": 118,
+      "total": 183,
+      "score": 0.644808743169399
+    }
+  ],
+  "queries": [
+    {
+      "at": "2026-11-24T19:18:22.363189+00:00",
+      "kind": "final verification",
+      "response": {
+        "ok": true,
+        "flagged": true,
+        "score": "0.645",
+        "request_id": "b83a4b49d4d2"
+      },
+      "requests": 1
+    }
+  ],
+  "requests_used": 1,
+  "simulated_wait_seconds": 0.0,
+  "finished_at": "2026-11-24T19:18:22.363233+00:00",
+  "stop_reason": "time limit reached",
+  "final_version": "v004",
+  "service_result": {
+    "flagged": true,
+    "score": "0.645",
+    "error": null
+  },
+  "minutes_to_final": 14.4,
+  "late_versions_ignored": 0
+}

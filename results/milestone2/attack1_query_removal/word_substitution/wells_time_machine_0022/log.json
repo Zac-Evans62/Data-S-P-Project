@@ -1,0 +1,250 @@
+{
+  "passage_id": "wells_time_machine_0022",
+  "editor": "Zac",
+  "max_minutes": 15,
+  "max_requests": 100,
+  "started_at": "2026-11-27T00:06:05.538645+00:00",
+  "versions": [
+    {
+      "version": "v000",
+      "at": "2026-11-27T00:06:05.538661+00:00",
+      "queried": false
+    },
+    {
+      "version": "v001",
+      "at": "2026-11-27T00:08:13.857006+00:00",
+      "queried": true,
+      "response": {
+        "ok": true,
+        "flagged": true,
+        "score": "0.667",
+        "error": null
+      },
+      "queried_at": "2026-11-27T00:08:14.039634+00:00"
+    },
+    {
+      "version": "v002",
+      "at": "2026-11-27T00:12:14.198999+00:00",
+      "queried": true,
+      "response": {
+        "ok": true,
+        "flagged": true,
+        "score": "0.639",
+        "error": null
+      },
+      "queried_at": "2026-11-27T00:12:14.370122+00:00"
+    },
+    {
+      "version": "v003",
+      "at": "2026-11-27T00:14:37.300592+00:00",
+      "queried": true,
+      "response": {
+        "ok": true,
+        "flagged": false,
+        "score": "0.585",
+        "error": null
+      },
+      "queried_at": "2026-11-27T00:14:37.540222+00:00"
+    }
+  ],
+  "probes": [
+    {
+      "word": "the",
+      "color": "green",
+      "at": "2026-11-27T00:09:19.504040+00:00"
+    },
+    {
+      "word": "vast",
+      "color": "green",
+      "at": "2026-11-27T00:09:19.664519+00:00"
+    },
+    {
+      "word": "doorway",
+      "color": "red",
+      "at": "2026-11-27T00:09:19.835135+00:00"
+    },
+    {
+      "word": "opened",
+      "color": "green",
+      "at": "2026-11-27T00:09:20.120939+00:00"
+    },
+    {
+      "word": "revelaing",
+      "color": "red",
+      "at": "2026-11-27T00:10:07.443189+00:00"
+    },
+    {
+      "word": "a",
+      "color": "green",
+      "at": "2026-11-27T00:10:07.619709+00:00"
+    },
+    {
+      "word": "proportionately",
+      "color": "red",
+      "at": "2026-11-27T00:10:07.835914+00:00"
+    },
+    {
+      "word": "great",
+      "color": "green",
+      "at": "2026-11-27T00:10:08.018019+00:00"
+    },
+    {
+      "word": "hall",
+      "color": "green",
+      "at": "2026-11-27T00:10:08.248783+00:00"
+    },
+    {
+      "word": "hung",
+      "color": "red",
+      "at": "2026-11-27T00:10:08.432468+00:00"
+    },
+    {
+      "word": "with",
+      "color": "red",
+      "at": "2026-11-27T00:10:08.622271+00:00"
+    },
+    {
+      "word": "grey",
+      "color": "green",
+      "at": "2026-11-27T00:10:08.787214+00:00"
+    },
+    {
+      "word": "foof",
+      "color": "green",
+      "at": "2026-11-27T00:11:08.912280+00:00"
+    },
+    {
+      "word": "existed",
+      "color": "green",
+      "at": "2026-11-27T00:11:09.112475+00:00"
+    },
+    {
+      "word": "in",
+      "color": "red",
+      "at": "2026-11-27T00:11:09.265009+00:00"
+    },
+    {
+      "word": "shadow",
+      "color": "green",
+      "at": "2026-11-27T00:11:09.447361+00:00"
+    },
+    {
+      "word": "the",
+      "color": "green",
+      "at": "2026-11-27T00:11:09.701598+00:00"
+    },
+    {
+      "word": "windows",
+      "color": "green",
+      "at": "2026-11-27T00:11:10.160623+00:00"
+    },
+    {
+      "word": "partially",
+      "color": "green",
+      "at": "2026-11-27T00:11:10.349159+00:00"
+    },
+    {
+      "word": "inlayed",
+      "color": "red",
+      "at": "2026-11-27T00:11:10.495062+00:00"
+    },
+    {
+      "word": "with",
+      "color": "red",
+      "at": "2026-11-27T00:11:10.668882+00:00"
+    },
+    {
+      "word": "colored",
+      "color": "green",
+      "at": "2026-11-27T00:11:10.820760+00:00"
+    },
+    {
+      "word": "glass",
+      "color": "red",
+      "at": "2026-11-27T00:11:10.974531+00:00"
+    },
+    {
+      "word": "the",
+      "color": "green",
+      "at": "2026-11-27T00:12:45.885876+00:00"
+    },
+    {
+      "word": "floor",
+      "color": "green",
+      "at": "2026-11-27T00:12:46.084302+00:00"
+    },
+    {
+      "word": "looked",
+      "color": "green",
+      "at": "2026-11-27T00:12:46.239539+00:00"
+    },
+    {
+      "word": "made",
+      "color": "green",
+      "at": "2026-11-27T00:12:46.420487+00:00"
+    },
+    {
+      "word": "up",
+      "color": "red",
+      "at": "2026-11-27T00:12:46.598100+00:00"
+    },
+    {
+      "word": "of",
+      "color": "green",
+      "at": "2026-11-27T00:12:46.768065+00:00"
+    },
+    {
+      "word": "huge",
+      "color": "green",
+      "at": "2026-11-27T00:12:46.921441+00:00"
+    },
+    {
+      "word": "blocks",
+      "color": "green",
+      "at": "2026-11-27T00:12:47.081059+00:00"
+    },
+    {
+      "word": "of",
+      "color": "green",
+      "at": "2026-11-27T00:12:47.237713+00:00"
+    },
+    {
+      "word": "very",
+      "color": "green",
+      "at": "2026-11-27T00:12:47.437249+00:00"
+    },
+    {
+      "word": "hard",
+      "color": "green",
+      "at": "2026-11-27T00:12:47.713140+00:00"
+    },
+    {
+      "word": "white",
+      "color": "green",
+      "at": "2026-11-27T00:12:47.871502+00:00"
+    },
+    {
+      "word": "metal",
+      "color": "red",
+      "at": "2026-11-27T00:12:48.031730+00:00"
+    },
+    {
+      "word": "appeared",
+      "color": "red",
+      "at": "2026-11-27T00:13:10.649108+00:00"
+    }
+  ],
+  "requests_used": 42,
+  "simulated_wait_seconds": 80.0,
+  "finished_at": "2026-11-27T00:14:47.984493+00:00",
+  "final_version": "v003",
+  "stop_reason": "unflagged",
+  "minutes_used": 8.7,
+  "unqueried_versions": 0,
+  "final_response": {
+    "ok": true,
+    "flagged": false,
+    "score": "0.585",
+    "error": null
+  }
+}

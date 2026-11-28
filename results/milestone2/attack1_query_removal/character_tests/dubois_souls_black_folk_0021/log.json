@@ -1,0 +1,91 @@
+{
+  "passage_id": "dubois_souls_black_folk_0021",
+  "requests_used": 7,
+  "simulated_wait_seconds": 40.0,
+  "simulated_seconds": 47.0,
+  "tests": {
+    "case": {
+      "prediction": "ignored: case folding makes the words identical",
+      "queries": 1,
+      "response": {
+        "ok": true,
+        "flagged": true,
+        "score": "0.636",
+        "request_id": "ebed08bc2b21"
+      },
+      "unflagged": false,
+      "changed_words_vs_watermarked": 0,
+      "exact": {
+        "green": 105,
+        "total": 165,
+        "distinct": 101,
+        "score": 0.6363636363636364,
+        "flagged": true
+      },
+      "steps": []
+    },
+    "zero_width": {
+      "prediction": "ignored: U+200B is deleted before tokenizing, so every word is unchanged",
+      "queries": 1,
+      "response": {
+        "ok": true,
+        "flagged": true,
+        "score": "0.636",
+        "request_id": "c59c6985bd1f"
+      },
+      "unflagged": false,
+      "changed_words_vs_watermarked": 0,
+      "exact": {
+        "green": 105,
+        "total": 165,
+        "distinct": 101,
+        "score": 0.6363636363636364,
+        "flagged": true
+      },
+      "steps": []
+    },
+    "punctuation": {
+      "prediction": "punctuation between words is ignored; a hyphen inside a word splits it into two new words with fresh colors, which can lower the score but hurts readability",
+      "queries": 4,
+      "response": {
+        "ok": true,
+        "flagged": false,
+        "score": "0.629",
+        "request_id": "013c3bedcaef"
+      },
+      "unflagged": true,
+      "changed_words_vs_watermarked": 4,
+      "exact": {
+        "green": 105,
+        "total": 167,
+        "distinct": 103,
+        "score": 0.6287425149700598,
+        "flagged": false
+      },
+      "steps": [
+        {
+          "step": "between-word punctuation",
+          "flagged": true,
+          "score": "0.636"
+        },
+        {
+          "step": "baseline",
+          "flagged": true,
+          "score": "0.636"
+        },
+        {
+          "step": "hyphenate 'unsatisfactory'",
+          "kept": true,
+          "flagged": true,
+          "score": "0.633"
+        },
+        {
+          "step": "hyphenate 'freeholders'",
+          "kept": true,
+          "flagged": false,
+          "score": "0.629"
+        }
+      ]
+    }
+  }
+}

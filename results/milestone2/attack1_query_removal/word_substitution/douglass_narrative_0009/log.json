@@ -1,0 +1,59 @@
+{
+  "passage_id": "douglass_narrative_0009",
+  "editor": "Zac",
+  "max_minutes": 15,
+  "max_requests": 100,
+  "started_at": "2026-11-26T23:12:40.391088+00:00",
+  "versions": [
+    {
+      "version": "v000",
+      "at": "2026-11-26T23:12:40.391122+00:00",
+      "queried": true,
+      "response": {
+        "ok": true,
+        "flagged": true,
+        "score": "0.663",
+        "error": null
+      },
+      "queried_at": "2026-11-26T23:15:21.407864+00:00"
+    },
+    {
+      "version": "v001",
+      "at": "2026-11-26T23:16:41.177933+00:00",
+      "queried": true,
+      "response": {
+        "ok": true,
+        "flagged": true,
+        "score": "0.638",
+        "error": null
+      },
+      "queried_at": "2026-11-26T23:16:41.376675+00:00"
+    },
+    {
+      "version": "v002",
+      "at": "2026-11-26T23:17:57.019763+00:00",
+      "queried": true,
+      "response": {
+        "ok": true,
+        "flagged": false,
+        "score": "0.624",
+        "error": null
+      },
+      "queried_at": "2026-11-26T23:17:57.212377+00:00"
+    }
+  ],
+  "probes": [],
+  "requests_used": 4,
+  "simulated_wait_seconds": 0.0,
+  "finished_at": "2026-11-26T23:18:08.985402+00:00",
+  "final_version": "v002",
+  "stop_reason": "unflagged",
+  "minutes_used": 5.5,
+  "unqueried_versions": 0,
+  "final_response": {
+    "ok": true,
+    "flagged": false,
+    "score": "0.624",
+    "error": null
+  }
+}

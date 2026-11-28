@@ -1,0 +1,15 @@
+{
+  "key_file": "config/key.hex",
+  "seed": 2026,
+  "candidate_thresholds": [
+    "0.55",
+    "0.60",
+    "0.65"
+  ],
+  "threshold": null,
+  "watermark_target": null,
+  "stopping_rule_max_minutes": 15,
+  "frozen": false,
+  "key_fingerprint": "e2d33beeda7d2c39",
+  "run_at": "2026-10-29T17:14:37.831742"
+}

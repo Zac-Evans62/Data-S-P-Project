@@ -1,0 +1,121 @@
+{
+  "passage_id": "london_call_wild_0037",
+  "requests_used": 12,
+  "simulated_wait_seconds": 40.0,
+  "simulated_seconds": 52.0,
+  "tests": {
+    "case": {
+      "prediction": "ignored: case folding makes the words identical",
+      "queries": 1,
+      "response": {
+        "ok": true,
+        "flagged": true,
+        "score": "0.684",
+        "request_id": "9c5b750b1cd0"
+      },
+      "unflagged": false,
+      "changed_words_vs_watermarked": 0,
+      "exact": {
+        "green": 78,
+        "total": 114,
+        "distinct": 87,
+        "score": 0.6842105263157895,
+        "flagged": true
+      },
+      "steps": []
+    },
+    "zero_width": {
+      "prediction": "ignored: U+200B is deleted before tokenizing, so every word is unchanged",
+      "queries": 1,
+      "response": {
+        "ok": true,
+        "flagged": true,
+        "score": "0.684",
+        "request_id": "c14c44fa7e15"
+      },
+      "unflagged": false,
+      "changed_words_vs_watermarked": 0,
+      "exact": {
+        "green": 78,
+        "total": 114,
+        "distinct": 87,
+        "score": 0.6842105263157895,
+        "flagged": true
+      },
+      "steps": []
+    },
+    "punctuation": {
+      "prediction": "punctuation between words is ignored; a hyphen inside a word splits it into two new words with fresh colors, which can lower the score but hurts readability",
+      "queries": 10,
+      "response": {
+        "ok": true,
+        "flagged": false,
+        "score": "0.622",
+        "request_id": "374bcb60cca2"
+      },
+      "unflagged": true,
+      "changed_words_vs_watermarked": 10,
+      "exact": {
+        "green": 74,
+        "total": 119,
+        "distinct": 91,
+        "score": 0.6218487394957983,
+        "flagged": false
+      },
+      "steps": [
+        {
+          "step": "between-word punctuation",
+          "flagged": true,
+          "score": "0.684"
+        },
+        {
+          "step": "baseline",
+          "flagged": true,
+          "score": "0.684"
+        },
+        {
+          "step": "hyphenate 'companionable'",
+          "kept": false,
+          "flagged": true,
+          "score": "0.687"
+        },
+        {
+          "step": "hyphenate 'pertinacity'",
+          "kept": false,
+          "flagged": true,
+          "score": "0.687"
+        },
+        {
+          "step": "hyphenate 'fierceness'",
+          "kept": true,
+          "flagged": true,
+          "score": "0.670"
+        },
+        {
+          "step": "hyphenate 'instention'",
+          "kept": true,
+          "flagged": true,
+          "score": "0.664"
+        },
+        {
+          "step": "hyphenate 'somewhere'",
+          "kept": true,
+          "flagged": true,
+          "score": "0.650"
+        },
+        {
+          "step": "hyphenate 'eachother'",
+          "kept": true,
+          "flagged": true,
+          "score": "0.636"
+        },
+        {
+          "step": "hyphenate 'rewarded'",
+          "kept": true,
+          "flagged": false,
+          "score": "0.622"
+        }
+      ]
+    }
+  }
+}

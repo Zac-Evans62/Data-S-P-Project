@@ -1,0 +1,181 @@
+{
+  "passage_id": "thoreau_walden_0027",
+  "requests_used": 22,
+  "simulated_wait_seconds": 40.0,
+  "simulated_seconds": 62.0,
+  "tests": {
+    "case": {
+      "prediction": "ignored: case folding makes the words identical",
+      "queries": 1,
+      "response": {
+        "ok": true,
+        "flagged": true,
+        "score": "0.686",
+        "request_id": "2f79fa627f16"
+      },
+      "unflagged": false,
+      "changed_words_vs_watermarked": 0,
+      "exact": {
+        "green": 107,
+        "total": 156,
+        "distinct": 110,
+        "score": 0.6858974358974359,
+        "flagged": true
+      },
+      "steps": []
+    },
+    "zero_width": {
+      "prediction": "ignored: U+200B is deleted before tokenizing, so every word is unchanged",
+      "queries": 1,
+      "response": {
+        "ok": true,
+        "flagged": true,
+        "score": "0.686",
+        "request_id": "8686f8844e32"
+      },
+      "unflagged": false,
+      "changed_words_vs_watermarked": 0,
+      "exact": {
+        "green": 107,
+        "total": 156,
+        "distinct": 110,
+        "score": 0.6858974358974359,
+        "flagged": true
+      },
+      "steps": []
+    },
+    "punctuation": {
+      "prediction": "punctuation between words is ignored; a hyphen inside a word splits it into two new words with fresh colors, which can lower the score but hurts readability",
+      "queries": 20,
+      "response": {
+        "ok": true,
+        "flagged": false,
+        "score": "0.627",
+        "request_id": "35d09bd9bf4b"
+      },
+      "unflagged": true,
+      "changed_words_vs_watermarked": 20,
+      "exact": {
+        "green": 104,
+        "total": 166,
+        "distinct": 120,
+        "score": 0.6265060240963856,
+        "flagged": false
+      },
+      "steps": [
+        {
+          "step": "between-word punctuation",
+          "flagged": true,
+          "score": "0.686"
+        },
+        {
+          "step": "baseline",
+          "flagged": true,
+          "score": "0.686"
+        },
+        {
+          "step": "hyphenate 'mythological'",
+          "kept": false,
+          "flagged": true,
+          "score": "0.688"
+        },
+        {
+          "step": "hyphenate 'traveller’s'",
+          "kept": true,
+          "flagged": true,
+          "score": "0.682"
+        },
+        {
+          "step": "hyphenate 'distinctly'",
+          "kept": false,
+          "flagged": true,
+          "score": "0.690"
+        },
+        {
+          "step": "hyphenate 'astounding'",
+          "kept": true,
+          "flagged": true,
+          "score": "0.677"
+        },
+        {
+          "step": "hyphenate 'indistinct'",
+          "kept": true,
+          "flagged": true,
+          "score": "0.667"
+        },
+        {
+          "step": "hyphenate 'mythology'",
+          "kept": false,
+          "flagged": true,
+          "score": "0.669"
+        },
+        {
+          "step": "hyphenate 'prominent'",
+          "kept": true,
+          "flagged": true,
+          "score": "0.656"
+        },
+        {
+          "step": "hyphenate 'character'",
+          "kept": false,
+          "flagged": true,
+          "score": "0.665"
+        },
+        {
+          "step": "hyphenate 'biography'",
+          "kept": true,
+          "flagged": true,
+          "score": "0.646"
+        },
+        {
+          "step": "hyphenate 'tragedies'",
+          "kept": false,
+          "flagged": true,
+          "score": "0.648"
+        },
+        {
+          "step": "hyphenate 'intervene'",
+          "kept": true,
+          "flagged": true,
+          "score": "0.642"
+        },
+        {
+          "step": "hyphenate 'tradition'",
+          "kept": true,
+          "flagged": true,
+          "score": "0.638"
+        },
+        {
+          "step": "hyphenate 'refreshed'",
+          "kept": true,
+          "flagged": true,
+          "score": "0.634"
+        },
+        {
+          "step": "hyphenate 'location'",
+          "kept": false,
+          "flagged": true,
+          "score": "0.636"
+        },
+        {
+          "step": "hyphenate 'deserves'",
+          "kept": false,
+          "flagged": true,
+          "score": "0.636"
+        },
+        {
+          "step": "hyphenate 'tempered'",
+          "kept": true,
+          "flagged": true,
+          "score": "0.630"
+        },
+        {
+          "step": "hyphenate 'beverage'",
+          "kept": true,
+          "flagged": false,
+          "score": "0.627"
+        }
+      ]
+    }
+  }
+}

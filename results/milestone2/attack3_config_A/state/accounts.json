@@ -1,0 +1,14 @@
+{
+  "submitter1": {
+    "role": "submitter",
+    "token_sha256": "4d009b0298aac59745faca0c396446c8b952f192769f1a9267002d303983c62e"
+  },
+  "submitter2": {
+    "role": "submitter",
+    "token_sha256": "46ac9da21803e173798ad1007c63209b1833aee8f355dffa312ec1750eea5cf4"
+  },
+  "auditor1": {
+    "role": "auditor",
+    "token_sha256": "b45dc6a29fd56f757f49d3b204c953a3962ab125dafaec9f9c8fa8b1c22f301d"
+  }
+}

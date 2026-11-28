@@ -1,0 +1,463 @@
+{
+  "config": "C",
+  "mode": "binary",
+  "preparation": {
+    "demonstration": [
+      {
+        "word": "men",
+        "repeats": 100,
+        "response": {
+          "ok": true,
+          "flagged": true,
+          "score": null
+        },
+        "color": "green"
+      },
+      {
+        "word": "hard",
+        "repeats": 100,
+        "response": {
+          "ok": true,
+          "flagged": true,
+          "score": null
+        },
+        "color": "green"
+      }
+    ],
+    "learning_requests": 94,
+    "colors_learned": 96,
+    "requests": 100,
+    "simulated_wait_seconds": 160.0,
+    "seconds": 260.0,
+    "budget": 100
+  },
+  "colors_correct": 179,
+  "colors_total": 179,
+  "attempts": [
+    {
+      "id": "douglass_narrative_0026",
+      "config": "C",
+      "service_flagged": false,
+      "hidden_flagged": false,
+      "hidden_score": "0.5547",
+      "changed_words": 7,
+      "swaps": [
+        {
+          "from": "direction",
+          "to": "way"
+        },
+        {
+          "from": "direction",
+          "to": "way"
+        },
+        {
+          "from": "instead",
+          "to": "alternatively"
+        },
+        {
+          "from": "reaching",
+          "to": "making"
+        },
+        {
+          "from": "determination",
+          "to": "finding"
+        },
+        {
+          "from": "revived",
+          "to": "recreated"
+        },
+        {
+          "from": "determined",
+          "to": "finded"
+        }
+      ],
+      "edit_requests": 22,
+      "edit_seconds": 62.0,
+      "stop_reason": "nothing left to learn or swap",
+      "colors_known": 111,
+      "history": [
+        {
+          "swaps_applied": 2,
+          "flagged": false,
+          "score": null,
+          "error": null,
+          "edit_requests": 1
+        },
+        {
+          "swaps_applied": 3,
+          "flagged": false,
+          "score": null,
+          "error": null,
+          "edit_requests": 7
+        },
+        {
+          "swaps_applied": 4,
+          "flagged": false,
+          "score": null,
+          "error": null,
+          "edit_requests": 10
+        },
+        {
+          "swaps_applied": 5,
+          "flagged": false,
+          "score": null,
+          "error": null,
+          "edit_requests": 15
+        },
+        {
+          "swaps_applied": 6,
+          "flagged": false,
+          "score": null,
+          "error": null,
+          "edit_requests": 17
+        },
+        {
+          "swaps_applied": 7,
+          "flagged": false,
+          "score": null,
+          "error": null,
+          "edit_requests": 22
+        }
+      ]
+    },
+    {
+      "id": "dubois_souls_black_folk_0021",
+      "config": "C",
+      "service_flagged": true,
+      "hidden_flagged": true,
+      "hidden_score": "0.6303",
+      "changed_words": 7,
+      "swaps": [
+        {
+          "from": "wages",
+          "to": "reward"
+        },
+        {
+          "from": "wages",
+          "to": "reward"
+        },
+        {
+          "from": "harvest",
+          "to": "reap"
+        },
+        {
+          "from": "labor",
+          "to": "proletariat"
+        },
+        {
+          "from": "furnishes",
+          "to": "renders"
+        },
+        {
+          "from": "gets",
+          "to": "acquires"
+        },
+        {
+          "from": "clothing",
+          "to": "textiling"
+        }
+      ],
+      "edit_requests": 18,
+      "edit_seconds": 58.0,
+      "stop_reason": "flagged",
+      "colors_known": 122,
+      "history": [
+        {
+          "swaps_applied": 2,
+          "flagged": false,
+          "score": null,
+          "error": null,
+          "edit_requests": 2
+        },
+        {
+          "swaps_applied": 3,
+          "flagged": false,
+          "score": null,
+          "error": null,
+          "edit_requests": 8
+        },
+        {
+          "swaps_applied": 4,
+          "flagged": false,
+          "score": null,
+          "error": null,
+          "edit_requests": 10
+        },
+        {
+          "swaps_applied": 5,
+          "flagged": false,
+          "score": null,
+          "error": null,
+          "edit_requests": 14
+        },
+        {
+          "swaps_applied": 6,
+          "flagged": false,
+          "score": null,
+          "error": null,
+          "edit_requests": 16
+        },
+        {
+          "swaps_applied": 7,
+          "flagged": true,
+          "score": null,
+          "error": null,
+          "edit_requests": 18
+        }
+      ]
+    },
+    {
+      "id": "london_call_wild_0032",
+      "config": "C",
+      "service_flagged": false,
+      "hidden_flagged": false,
+      "hidden_score": "0.6105",
+      "changed_words": 3,
+      "swaps": [
+        {
+          "from": "condition",
+          "to": "status"
+        },
+        {
+          "from": "seemed",
+          "to": "looked"
+        },
+        {
+          "from": "proclaimed",
+          "to": "promulgated"
+        }
+      ],
+      "edit_requests": 11,
+      "edit_seconds": 51.0,
+      "stop_reason": "nothing left to learn or swap",
+      "colors_known": 129,
+      "history": [
+        {
+          "swaps_applied": 1,
+          "flagged": false,
+          "score": null,
+          "error": null,
+          "edit_requests": 2
+        },
+        {
+          "swaps_applied": 2,
+          "flagged": false,
+          "score": null,
+          "error": null,
+          "edit_requests": 4
+        },
+        {
+          "swaps_applied": 3,
+          "flagged": false,
+          "score": null,
+          "error": null,
+          "edit_requests": 11
+        }
+      ]
+    },
+    {
+      "id": "stevenson_treasure_0028",
+      "config": "C",
+      "service_flagged": true,
+      "hidden_flagged": true,
+      "hidden_score": "0.6310",
+      "changed_words": 12,
+      "swaps": [
+        {
+          "from": "But",
+          "to": "Only"
+        },
+        {
+          "from": "but",
+          "to": "only"
+        },
+        {
+          "from": "appeared",
+          "to": "looked"
+        },
+        {
+          "from": "swarmed",
+          "to": "poured"
+        },
+        {
+          "from": "swarmed",
+          "to": "poured"
+        },
+        {
+          "from": "fence",
+          "to": "fencing"
+        },
+        {
+          "from": "Gray",
+          "to": "Grey"
+        },
+        {
+          "from": "yet",
+          "to": "hitherto"
+        },
+        {
+          "from": "fell",
+          "to": "drop"
+        },
+        {
+          "from": "frightened",
+          "to": "terrified"
+        },
+        {
+          "from": "inside",
+          "to": "indoors"
+        },
+        {
+          "from": "woods",
+          "to": "wood"
+        }
+      ],
+      "edit_requests": 26,
+      "edit_seconds": 66.0,
+      "stop_reason": "flagged",
+      "colors_known": 145,
+      "history": [
+        {
+          "swaps_applied": 3,
+          "flagged": false,
+          "score": null,
+          "error": null,
+          "edit_requests": 1
+        },
+        {
+          "swaps_applied": 5,
+          "flagged": false,
+          "score": null,
+          "error": null,
+          "edit_requests": 4
+        },
+        {
+          "swaps_applied": 6,
+          "flagged": false,
+          "score": null,
+          "error": null,
+          "edit_requests": 6
+        },
+        {
+          "swaps_applied": 7,
+          "flagged": false,
+          "score": null,
+          "error": null,
+          "edit_requests": 10
+        },
+        {
+          "swaps_applied": 8,
+          "flagged": false,
+          "score": null,
+          "error": null,
+          "edit_requests": 13
+        },
+        {
+          "swaps_applied": 9,
+          "flagged": false,
+          "score": null,
+          "error": null,
+          "edit_requests": 15
+        },
+        {
+          "swaps_applied": 10,
+          "flagged": false,
+          "score": null,
+          "error": null,
+          "edit_requests": 19
+        },
+        {
+          "swaps_applied": 11,
+          "flagged": false,
+          "score": null,
+          "error": null,
+          "edit_requests": 23
+        },
+        {
+          "swaps_applied": 12,
+          "flagged": true,
+          "score": null,
+          "error": null,
+          "edit_requests": 26
+        }
+      ]
+    },
+    {
+      "id": "wells_time_machine_0022",
+      "config": "C",
+      "service_flagged": true,
+      "hidden_flagged": true,
+      "hidden_score": "0.6320",
+      "changed_words": 5,
+      "swaps": [
+        {
+          "from": "but",
+          "to": "only"
+        },
+        {
+          "from": "doorway",
+          "to": "threshold"
+        },
+        {
+          "from": "glazed",
+          "to": "glassy"
+        },
+        {
+          "from": "worn",
+          "to": "haggard"
+        },
+        {
+          "from": "perhaps",
+          "to": "possibly"
+        }
+      ],
+      "edit_requests": 41,
+      "edit_seconds": 121.0,
+      "stop_reason": "flagged",
+      "colors_known": 179,
+      "history": [
+        {
+          "swaps_applied": 1,
+          "flagged": false,
+          "score": null,
+          "error": null,
+          "edit_requests": 1
+        },
+        {
+          "swaps_applied": 2,
+          "flagged": false,
+          "score": null,
+          "error": null,
+          "edit_requests": 28
+        },
+        {
+          "swaps_applied": 3,
+          "flagged": false,
+          "score": null,
+          "error": null,
+          "edit_requests": 32
+        },
+        {
+          "swaps_applied": 4,
+          "flagged": false,
+          "score": null,
+          "error": null,
+          "edit_requests": 35
+        },
+        {
+          "swaps_applied": 5,
+          "flagged": true,
+          "score": null,
+          "error": null,
+          "edit_requests": 41
+        }
+      ]
+    }
+  ],
+  "request_counts_logged": {
+    "flagged": 90,
+    "not_flagged": 118,
+    "rate_limited": 10,
+    "total": 218
+  }
+}

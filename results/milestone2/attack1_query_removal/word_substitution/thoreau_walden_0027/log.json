@@ -1,0 +1,242 @@
+{
+  "passage_id": "thoreau_walden_0027",
+  "editor": "Zac",
+  "max_minutes": 15,
+  "max_requests": 100,
+  "started_at": "2026-11-26T23:51:24.611912+00:00",
+  "versions": [
+    {
+      "version": "v000",
+      "at": "2026-11-26T23:51:24.611927+00:00",
+      "queried": false
+    },
+    {
+      "version": "v001",
+      "at": "2026-11-26T23:53:17.562355+00:00",
+      "queried": true,
+      "response": {
+        "ok": true,
+        "flagged": true,
+        "score": "0.669",
+        "error": null
+      },
+      "queried_at": "2026-11-26T23:54:38.204876+00:00"
+    },
+    {
+      "version": "v002",
+      "at": "2026-11-26T23:58:40.840803+00:00",
+      "queried": true,
+      "response": {
+        "ok": true,
+        "flagged": true,
+        "score": "0.669",
+        "error": null
+      },
+      "queried_at": "2026-11-26T23:58:41.054920+00:00"
+    },
+    {
+      "version": "v003",
+      "at": "2026-11-27T00:02:13.598114+00:00",
+      "queried": true,
+      "response": {
+        "ok": true,
+        "flagged": true,
+        "score": "0.636",
+        "error": null
+      },
+      "queried_at": "2026-11-27T00:02:13.848120+00:00"
+    },
+    {
+      "version": "v004",
+      "at": "2026-11-27T00:03:13.513296+00:00",
+      "queried": true,
+      "response": {
+        "ok": true,
+        "flagged": false,
+        "score": "0.623",
+        "error": null
+      },
+      "queried_at": "2026-11-27T00:03:13.701590+00:00"
+    }
+  ],
+  "probes": [
+    {
+      "word": "closer",
+      "color": "red",
+      "at": "2026-11-26T23:54:57.466384+00:00"
+    },
+    {
+      "word": "to",
+      "color": "red",
+      "at": "2026-11-26T23:54:57.648419+00:00"
+    },
+    {
+      "word": "town",
+      "color": "red",
+      "at": "2026-11-26T23:54:57.855654+00:00"
+    },
+    {
+      "word": "you",
+      "color": "red",
+      "at": "2026-11-26T23:56:05.720604+00:00"
+    },
+    {
+      "word": "come",
+      "color": "red",
+      "at": "2026-11-26T23:56:05.916819+00:00"
+    },
+    {
+      "word": "to",
+      "color": "red",
+      "at": "2026-11-26T23:56:06.089271+00:00"
+    },
+    {
+      "word": "on",
+      "color": "red",
+      "at": "2026-11-26T23:56:17.890893+00:00"
+    },
+    {
+      "word": "the",
+      "color": "green",
+      "at": "2026-11-26T23:56:18.060091+00:00"
+    },
+    {
+      "word": "other",
+      "color": "red",
+      "at": "2026-11-26T23:56:18.228000+00:00"
+    },
+    {
+      "word": "side",
+      "color": "green",
+      "at": "2026-11-26T23:56:18.392403+00:00"
+    },
+    {
+      "word": "of",
+      "color": "green",
+      "at": "2026-11-26T23:56:18.555266+00:00"
+    },
+    {
+      "word": "the",
+      "color": "green",
+      "at": "2026-11-26T23:56:18.749920+00:00"
+    },
+    {
+      "word": "way",
+      "color": "green",
+      "at": "2026-11-26T23:56:18.931313+00:00"
+    },
+    {
+      "word": "let",
+      "color": "green",
+      "at": "2026-11-26T23:59:22.768089+00:00"
+    },
+    {
+      "word": "time",
+      "color": "red",
+      "at": "2026-11-26T23:59:22.929472+00:00"
+    },
+    {
+      "word": "intervene",
+      "color": "green",
+      "at": "2026-11-26T23:59:23.134322+00:00"
+    },
+    {
+      "word": "in",
+      "color": "red",
+      "at": "2026-11-26T23:59:23.298820+00:00"
+    },
+    {
+      "word": "some",
+      "color": "red",
+      "at": "2026-11-26T23:59:23.482786+00:00"
+    },
+    {
+      "word": "measure",
+      "color": "green",
+      "at": "2026-11-26T23:59:23.653299+00:00"
+    },
+    {
+      "word": "here",
+      "color": "green",
+      "at": "2026-11-27T00:00:17.486209+00:00"
+    },
+    {
+      "word": "the",
+      "color": "green",
+      "at": "2026-11-27T00:00:17.646105+00:00"
+    },
+    {
+      "word": "most",
+      "color": "red",
+      "at": "2026-11-27T00:00:17.849273+00:00"
+    },
+    {
+      "word": "indistinct",
+      "color": "green",
+      "at": "2026-11-27T00:00:18.012583+00:00"
+    },
+    {
+      "word": "and",
+      "color": "green",
+      "at": "2026-11-27T00:00:18.194272+00:00"
+    },
+    {
+      "word": "vile",
+      "color": "red",
+      "at": "2026-11-27T00:00:18.367803+00:00"
+    },
+    {
+      "word": "tradition",
+      "color": "green",
+      "at": "2026-11-27T00:00:18.613082+00:00"
+    },
+    {
+      "word": "says",
+      "color": "green",
+      "at": "2026-11-27T00:00:18.815631+00:00"
+    },
+    {
+      "word": "and",
+      "color": "green",
+      "at": "2026-11-27T00:02:47.488368+00:00"
+    },
+    {
+      "word": "heard",
+      "color": "green",
+      "at": "2026-11-27T00:02:47.655912+00:00"
+    },
+    {
+      "word": "and",
+      "color": "green",
+      "at": "2026-11-27T00:02:47.825521+00:00"
+    },
+    {
+      "word": "told",
+      "color": "red",
+      "at": "2026-11-27T00:02:47.987871+00:00"
+    },
+    {
+      "word": "the",
+      "color": "green",
+      "at": "2026-11-27T00:02:48.142978+00:00"
+    },
+    {
+      "word": "news",
+      "color": "green",
+      "at": "2026-11-27T00:02:48.565256+00:00"
+    }
+  ],
+  "requests_used": 40,
+  "simulated_wait_seconds": 80.0,
+  "finished_at": "2026-11-27T00:03:21.965260+00:00",
+  "final_version": "v004",
+  "stop_reason": "unflagged",
+  "minutes_used": 12.0,
+  "unqueried_versions": 0,
+  "final_response": {
+    "ok": true,
+    "flagged": false,
+    "score": "0.623",
+    "error": null
+  }
+}

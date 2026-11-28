@@ -1,0 +1,57 @@
+{
+  "passage_id": "douglass_narrative_0026",
+  "set": "evaluation",
+  "editor": "Zac",
+  "target": "0.66",
+  "max_minutes": 15,
+  "settings_frozen": true,
+  "started_at": "2026-10-31T18:09:38.893973+00:00",
+  "versions": [
+    {
+      "version": "v000",
+      "at": "2026-10-31T18:09:38.894002+00:00",
+      "green": 64,
+      "total": 128,
+      "score": 0.5
+    },
+    {
+      "version": "v001",
+      "at": "2026-10-31T18:13:02.542226+00:00",
+      "green": 69,
+      "total": 130,
+      "score": 0.5307692307692308
+    },
+    {
+      "version": "v002",
+      "at": "2026-10-31T18:17:09.474059+00:00",
+      "green": 85,
+      "total": 137,
+      "score": 0.6204379562043796
+    },
+    {
+      "version": "v003",
+      "at": "2026-10-31T18:20:01.399826+00:00",
+      "green": 87,
+      "total": 138,
+      "score": 0.6304347826086957
+    },
+    {
+      "version": "v004",
+      "at": "2026-10-31T18:22:58.150941+00:00",
+      "green": 91,
+      "total": 145,
+      "score": 0.6275862068965518
+    },
+    {
+      "version": "v005",
+      "at": "2026-10-31T18:23:40.200318+00:00",
+      "green": 92,
+      "total": 146,
+      "score": 0.6301369863013698
+    }
+  ],
+  "finished_at": "2026-10-31T18:34:28.920704+00:00",
+  "stop_reason": "time limit reached",
+  "final_version": "v003",
+  "minutes_used": 24.8
+}

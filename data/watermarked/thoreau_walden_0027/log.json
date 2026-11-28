@@ -1,0 +1,22 @@
+{
+  "passage_id": "thoreau_walden_0027",
+  "set": "evaluation",
+  "editor": "Zac",
+  "target": "0.66",
+  "max_minutes": 15,
+  "settings_frozen": true,
+  "started_at": "2026-10-31T19:40:57.698982+00:00",
+  "versions": [
+    {
+      "version": "v000",
+      "at": "2026-10-31T19:40:57.699011+00:00",
+      "green": 107,
+      "total": 156,
+      "score": 0.6858974358974359
+    }
+  ],
+  "finished_at": "2026-10-31T19:41:31.736455+00:00",
+  "stop_reason": "target reached",
+  "final_version": "v000",
+  "minutes_used": 0.6
+}

@@ -1,0 +1,9 @@
+{
+  "_note": "Spec 5.2: set budgets BEFORE running any attack. Commit this file and tag the commit (git tag budgets-set) before the first attack run. Do not change it afterwards.",
+  "per_passage_requests": 100,
+  "per_passage_minutes": 15,
+  "preparation_requests": 100,
+  "character_tests_share_one_budget": true,
+  "rate_limit": {"requests": 20, "window_seconds": 60},
+  "score_digits": 3
+}

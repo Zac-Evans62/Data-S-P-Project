@@ -1,0 +1,11 @@
+{"event": "reset", "at": 0.0}
+{"event": "wait", "seconds": 40.0, "from": 21.0, "to": 61.0, "at": 61.0}
+{"event": "wait", "seconds": 40.0, "from": 82.0, "to": 122.0, "at": 122.0}
+{"event": "wait", "seconds": 40.0, "from": 143.0, "to": 183.0, "at": 183.0}
+{"event": "wait", "seconds": 40.0, "from": 204.0, "to": 244.0, "at": 244.0}
+{"event": "wait", "seconds": 40.0, "from": 265.0, "to": 305.0, "at": 305.0}
+{"event": "wait", "seconds": 40.0, "from": 326.0, "to": 366.0, "at": 366.0}
+{"event": "wait", "seconds": 40.0, "from": 387.0, "to": 427.0, "at": 427.0}
+{"event": "wait", "seconds": 40.0, "from": 448.0, "to": 488.0, "at": 488.0}
+{"event": "wait", "seconds": 40.0, "from": 509.0, "to": 549.0, "at": 549.0}
+{"event": "wait", "seconds": 40.0, "from": 570.0, "to": 610.0, "at": 610.0}

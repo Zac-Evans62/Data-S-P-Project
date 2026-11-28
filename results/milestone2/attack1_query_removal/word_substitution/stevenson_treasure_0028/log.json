@@ -1,0 +1,40 @@
+{
+  "passage_id": "stevenson_treasure_0028",
+  "editor": "Zac",
+  "max_minutes": 15,
+  "max_requests": 100,
+  "started_at": "2026-11-26T23:35:23.293709+00:00",
+  "versions": [
+    {
+      "version": "v000",
+      "at": "2026-11-26T23:35:23.293723+00:00",
+      "queried": false
+    },
+    {
+      "version": "v001",
+      "at": "2026-11-26T23:37:27.579321+00:00",
+      "queried": true,
+      "response": {
+        "ok": true,
+        "flagged": false,
+        "score": "0.616",
+        "error": null
+      },
+      "queried_at": "2026-11-26T23:37:27.867498+00:00"
+    }
+  ],
+  "probes": [],
+  "requests_used": 1,
+  "simulated_wait_seconds": 0.0,
+  "finished_at": "2026-11-26T23:37:44.083290+00:00",
+  "final_version": "v001",
+  "stop_reason": "unflagged",
+  "minutes_used": 2.3,
+  "unqueried_versions": 0,
+  "final_response": {
+    "ok": true,
+    "flagged": false,
+    "score": "0.616",
+    "error": null
+  }
+}
